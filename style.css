@@ -1,0 +1,596 @@
+/* selector {
+    propiedad: valor;
+}
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(Roboto-Regular.ttf);
+    font-family: tenorsans;
+    src: url(TenorSans-Regular.ttf);
+}
+
+/* Background */
+.indexbody {
+    background-image: url('imagenes/background/background.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Fin Background */
+
+/* Trabajo Background */
+.trabajobody {
+    background-color: white
+}
+
+
+
+
+/*Index Navigation Bar*/
+nav {
+    display: flex;
+    justify-content: right;
+    padding: 3% 3%;
+}
+
+
+
+
+
+nav ul li {
+    list-style: none;
+    float: left;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-family: roboto;
+    font-size: 87%;
+}
+
+.indexheader nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.trabajoheader ul li a{
+    text-decoration: none
+}
+
+
+
+
+/* Fin NavBar */
+
+/* Trabajo NavBar */
+
+.trabajoheader {
+    display: flex;
+    justify-content: right;
+}
+
+.trabajotext a {
+    color: blue;
+}
+.trabajotext1 a{
+    color: black;
+}
+
+.experienciastext a {
+    color: black;
+}
+.experienciastext1 a{
+    color: blue;
+}
+
+.sobremitext a {
+    color: black;
+}
+
+.contactotext a {
+    color: black;
+}
+
+
+.logo {
+    color: white;
+    display: flex;
+    justify-content: left;
+    padding: 0% 2%
+}
+
+/* Fin Trabajo NavBar*/
+
+
+ /* Media Query Nav Bar */
+
+ /* Media Query Nav Bar */
+
+/* H1PABLO GIMENEZ */
+
+.h1pablogimenez{
+    color: black;
+    font-size: 150%;
+    padding-left: 38%;
+    font-family: tenorsans; 
+}
+
+
+
+
+
+/* Fin H1PABLO GIMENEZ */
+
+
+
+
+
+/* Grid Fotos */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1%;
+    margin: 5%;
+    margin-top: 2%;
+    grid-template-areas: "item1 item2 item3 item3"
+        "item4 item4 item5 item5"
+        "item6 item7 item5 item5"
+        "item8 item9 item9 item9";
+    grid-auto-rows: auto;
+}
+
+
+/* Imagenes Grid Area */
+
+
+
+.item1 {
+    grid-area: item1;
+    position: relative;
+}
+
+.item2 {
+    grid-area: item2;
+    position: relative;
+
+}
+
+.item3 {
+    grid-area: item3;
+    position: relative
+}
+
+.item4 {
+    grid-area: item4;
+    position: relative
+}
+
+.item5 {
+    grid-area: item5;
+    position: relative
+}
+
+.item6 {
+    grid-area: item6;
+    position: relative
+}
+
+.item7 {
+    grid-area: item7;
+    position: relative
+}
+
+.item8 {
+    grid-area: item8;
+    position: relative
+}
+
+.item9 {
+    grid-area: item9;
+    position: relative
+}
+
+/* Fin Grid Area */
+
+/* Item(Imagenes) Custom */
+
+.item1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item9 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Item(Imagenes) Custom */
+
+
+
+/* H2 Custom - Overlay */
+
+.overlay1 {
+    color: white;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
+    width: 100%;
+    margin: 0;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+
+
+}
+
+.item1:hover .overlay1 {
+    height: 50%;
+    cursor: pointer;
+
+}
+
+
+.overlay2 {
+    color: white;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
+    width: 100%;
+    margin: 0;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.item2:hover .overlay2 {
+    height: 50%;
+    cursor: pointer;
+
+}
+
+.overlay3 {
+    color: white;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
+    width: 100%;
+    margin: 0;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.item3:hover .overlay3 {
+    height: 50%;
+    cursor: pointer;
+}
+
+.overlay4 {
+    color: white;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
+    width: 100%;
+    margin: 0;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.item4:hover .overlay4 {
+    height: 44%;
+    cursor: pointer;
+}
+
+.overlay5 {
+    color: white;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
+    width: 100%;
+    margin: 0;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.item5:hover .overlay5 {
+    height: 50%;
+    cursor: pointer;
+}
+
+.overlay6 {
+    color: white;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
+    width: 100%;
+    margin: 0;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.item6:hover .overlay6 {
+    height: 50%;
+    cursor: pointer;
+}
+
+.overlay7 {
+    color: white;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
+    width: 100%;
+    margin: 0;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.item7:hover .overlay7 {
+    height: 50%;
+    cursor: pointer;
+}
+
+.overlay8 {
+    color: white;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
+    width: 100%;
+    margin: 0;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.item8:hover .overlay8 {
+    height: 50%;
+    cursor: pointer;
+}
+
+.overlay9 {
+    color: white;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
+    width: 100%;
+    margin: 0;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.item9:hover .overlay9 {
+    height: 50%;
+    cursor: pointer;
+}
+
+
+/* Fin H2 Custom - Overlay */
+
+
+
+
+
+/*  Grid Media Query */
+
+.contenedo
+
+
+/*  Fin Grid Area */
+
+
+
+
+
+
+
+
+/*Section Textos*/
+h1 {
+    font-family: tenorsans;
+    color: white;
+    font-size: 350%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+
+}
+
+h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    margin-top: 2%;
+    font-family: roboto;
+}
+
+div a {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    margin-top: -5%;
+    
+
+    
+}
+.Pablogimenez {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: white;
+    font-family: tenorsans;
+    font-size: 200%;
+}
+
+/* Fin Section Textos*/
+
+
+/*Footer*/
+
+footer {
+    background: black;
+    height: auto;
+    float: center;
+    padding-top: 3%;
+    color: white;
+    padding-left: 35%;
+}
+
+footer address {
+    display: flex;
+    justify-content: left;
+    margin-left: 10%;
+}
+
+.mail address {
+    display: flex;
+    justify-content: baseline;
+    padding-left: 4%;
+    margin-top: 1%;
+}
+
+.redes {
+    display: flex;
+    justify-content: left;
+    padding-top: 15%;
+    padding-left: 5%;
+    gap: 15%;
+}
+
+.redes a {
+    text-decoration: none;
+
+    color: white;
+
+}
+
+.redessocials ul {
+    display: flex;
+    gap: 11%;
+    padding-top: 2%;
+    list-style: none;
+    margin-bottom: -7%;
+    margin-top: 3%;
+}
+/*Fin Footer*/
+
+
+
+/* Grid Experiencias */
+
+.containerexperiencias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   object-fit: cover;
+   padding-bottom: 1%;
+    
+}
+
+.img3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img2{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.img1{
+    width: 100%;
+    object-fit: cover;
+height: 100%;
+}
+.img4{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+/* EXPERIENCIAS H2 Custom - Overlay */
+.item{
+    position: relative;
+}
+.overlay{
+    color: white;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
+    width: 100%;
+    margin: 0;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+}
+.item:hover .overlay {
+    height: 50%;
+    cursor: pointer;
+}
+.h2experiencias{
+    font-family: roboto;
+    padding-top: 5%;
+}
+.h3experiencias{
+    font-size: 90%;
+    font-family: roboto;
+    padding: 5%;
+}
+/* EXPERIENCIAS H2 Custom - Overlay */

@@ -206,59 +206,11 @@ nav ul li {
 
 /* Item(Imagenes) Custom */
 
-.item1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item3 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item4 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item5 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item6 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item7 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item8 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item9 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+.container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
 /* Item(Imagenes) Custom */
 
@@ -266,7 +218,7 @@ nav ul li {
 
 /* H2 Custom - Overlay */
 
-.overlay1 {
+.overlay {
     color: white;
     bottom: 0;
     position: absolute;
@@ -280,146 +232,65 @@ nav ul li {
 
 }
 
-.item1:hover .overlay1 {
+.item1:hover .overlay {
     height: 50%;
     cursor: pointer;
 
 }
 
 
-.overlay2 {
-    color: white;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
-    width: 100%;
-    margin: 0;
-    height: 0;
-    transition: 1s ease;
-    overflow: hidden;
-}
 
-.item2:hover .overlay2 {
+
+.item2:hover .overlay {
     height: 50%;
     cursor: pointer;
 
 }
 
-.overlay3 {
-    color: white;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
-    width: 100%;
-    margin: 0;
-    height: 0;
-    transition: 1s ease;
-    overflow: hidden;
-}
 
-.item3:hover .overlay3 {
+
+.item3:hover .overlay {
     height: 50%;
     cursor: pointer;
 }
 
-.overlay4 {
-    color: white;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
-    width: 100%;
-    margin: 0;
-    height: 0;
-    transition: 1s ease;
-    overflow: hidden;
-}
 
-.item4:hover .overlay4 {
+
+.item4:hover .overlay {
     height: 44%;
     cursor: pointer;
 }
 
-.overlay5 {
-    color: white;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
-    width: 100%;
-    margin: 0;
-    height: 0;
-    transition: 1s ease;
-    overflow: hidden;
-}
 
-.item5:hover .overlay5 {
+
+.item5:hover .overlay {
     height: 50%;
     cursor: pointer;
 }
 
-.overlay6 {
-    color: white;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
-    width: 100%;
-    margin: 0;
-    height: 0;
-    transition: 1s ease;
-    overflow: hidden;
-}
 
-.item6:hover .overlay6 {
+
+.item6:hover .overlay {
     height: 50%;
     cursor: pointer;
 }
 
-.overlay7 {
-    color: white;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
-    width: 100%;
-    margin: 0;
-    height: 0;
-    transition: 1s ease;
-    overflow: hidden;
-}
 
-.item7:hover .overlay7 {
+
+.item7:hover .overlay {
     height: 50%;
     cursor: pointer;
 }
 
-.overlay8 {
-    color: white;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
-    width: 100%;
-    margin: 0;
-    height: 0;
-    transition: 1s ease;
-    overflow: hidden;
-}
 
-.item8:hover .overlay8 {
+
+
+.item8:hover .overlay {
     height: 50%;
     cursor: pointer;
 }
 
-.overlay9 {
-    color: white;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
-    width: 100%;
-    margin: 0;
-    height: 0;
-    transition: 1s ease;
-    overflow: hidden;
-}
-
-.item9:hover .overlay9 {
+.item9:hover .overlay {
     height: 50%;
     cursor: pointer;
 }
@@ -495,6 +366,7 @@ footer {
     padding-top: 3%;
     color: white;
     padding-left: 35%;
+    bottom: 0%;
 }
 
 footer address {
@@ -547,26 +419,13 @@ footer address {
     
 }
 
-.img3{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.img2{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-}
 .img1{
     width: 100%;
     object-fit: cover;
 height: 100%;
 }
-.img4{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-}
+
+
 
 /* EXPERIENCIAS H2 Custom - Overlay */
 .item{
@@ -638,3 +497,46 @@ height: 100%;
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+
+/* FORMULARIO */
+.containercontacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.Contacto{
+    padding-left: 50%;
+font-family: roboto;
+}
+
+.Contacto h1{
+font-size: 300%;
+}
+.Contacto h4{
+    padding-top: 5%;
+}
+
+
+.formulario{
+    background-color: black;
+			border-radius: 3px;
+			color: #999;
+			font-size: 0.8em;
+			padding: 20px;
+			margin: 0 auto;
+			width: 300px;
+            margin-bottom: 5%;
+        }
+        .center-content input{
+width: 100%;
+        }
+        .formulario input{
+            width: 100% ;
+            padding: 3%;
+        }
+        .field{
+            width: 100%;
+            padding: 5%;
+        }
+
+        /* Fin FORMULARIO */

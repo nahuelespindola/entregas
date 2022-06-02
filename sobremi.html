@@ -3,78 +3,79 @@
 
 <head>
 
-    <title>Sobre mi</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/90c888b6e4.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+   <title>Sobre mi</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/90c888b6e4.js" crossorigin="anonymous"></script>
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 </head>
 
-<body>
-    <header>
-        <nav class="trabajoheader">
-            <ul>
-                <li class="experienciastext"><a href="experiencias.html">Experiencias</a></li>
-                <li class="trabajotext1"><a href="trabajo.html">Trabajo</a></li>
-                <li class="sobremitext1"><a href="sobremi.html">Sobre mi</a></li>
-                <li class="contactotext"><a href="contacto.html">Contacto</a></li>
+<body class="d-flex flex-column min-vh-100">
+   <header>
+      <nav class="navbar navbar-expand-lg bg-black navbar-main">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Pablo Gimenez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon">
+                  <i class="fas fa-bars" style="color:rgba(255, 255, 255, 0.835); font-size:28px;"></i>
+               </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <div class="nav ms-auto">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="experiencias.html">Experiencias</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="trabajo.html">Trabajo</a>
+                     </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="sobremi.html">Sobre mi</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                     </li>
+               </div>
 
-
-
-            </ul>
-        </nav>
-        <div class="logo">
-            <a href="index.html"><img src="imagenes/Mainpage/mainpage.png" alt="" width="60%"></a>
-        </div>
-
-
-        <div class="conteinersobremi">
-            <div class="portrait">
-                <img src="imagenes/Sobre mi.png" alt="">
+               </ul>
             </div>
-            <div class="texto">
-                <h1 class="holasoypablo">Hola! soy Pablo Gimenez.</H1>
-                <p class="parrafo">
-                    Soy un apasionado por el mundo de la fotografia
-                    y el arte digital. <br>
-                    Disfruto de asistir a espacios abiertos cargados
-                    de naturaleza lista para ser transmitida mediante
-                    el lente de mi camara, no sin antes manipularlas
-                    mediante Photoshop. <br>
-                    Amo trabajar y experimentar con colores, texturas
-                    y formas.Siempre en busca de nuevos proyectos
-
-                </p>
-            </div>
-
-        </div>
-
-        <footer class="footerv2">
-
-            <div class="mail">
-                <address>
-                    Pablo Gimenez
-                </address>
-                <address class="mail2">pablogimenez@gmail.com</address>
-                <div class="redessocials">
-                    <ul>
-                        <li>Instagram</li>
-                        <li>Behance</li>
-                        <li>Linkedin</li>
-                    </ul>
-                </div>
-                <div class="redes">
-                    <a href="#" class="fa fa-instagram">
-                    </a>
-                    <a href="#" class="fa fa-behance"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
-                </div>
-
-        </footer>
+         </div>
+      </nav>
+   </header>
 
 
+   <div class="conteinersobremi">
+      <div class="portrait">
+         <img src="imagenes/Sobre mi.png" alt="">
+      </div>
+      <div class="texto">
+         <h1 class="holasoypablo">Hola! soy Pablo Gimenez.</H1>
+         <p class="parrafo">
+            Soy un apasionado por el mundo de la fotografia
+            y el arte digital. <br>
+            Disfruto de asistir a espacios abiertos cargados
+            de naturaleza lista para ser transmitida mediante
+            el lente de mi camara, no sin antes manipularlas
+            mediante Photoshop. <br>
+            Amo trabajar y experimentar con colores, texturas
+            y formas.Siempre en busca de nuevos proyectos
+
+         </p>
+      </div>
+
+   </div>
+
+   <footer class="footer mt-auto">
+      <p>Copyright &copy;, Nahuel Espindola <address>nahuelschbap@hotmail.com</address>
+      </p>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

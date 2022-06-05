@@ -355,10 +355,34 @@ nav ul li {
 
 
 
-
+/* Media query */
+@media (max-width: 768px) {
+    .trabajopng {
+        margin-top: 30% ;
+    }
+}
 
 @media (max-width: 768px) {
-    .navbar-brand {
-        display: none;
+    .container {
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+}
+
+@media (max-width: 768px) {
+    .gridexperiencias {
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+}
+@media (max-width: 768px) {
+    .conteinersobremi {
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+    .portrait{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .formgrid-container {
+        grid-template-columns: repeat(1, 1fr) ;
     }
 }

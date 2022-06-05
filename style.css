@@ -14,6 +14,7 @@
     src: url(TenorSans-Regular.ttf);
 }
 /* Navbar Bootstrap */
+
 .navbar-main .active {
     text-decoration: underline white;
     text-underline-offset: 30%;
@@ -24,6 +25,15 @@
 .nav-item a {
     color: white;
 }
+a.nav-link:hover{
+    color: gray;
+}
+a.navbar-brand:hover{
+    color: gray;
+}
+
+
+
 nav ul li {
     list-style: none;
     float: left;
@@ -32,6 +42,7 @@ nav ul li {
     font-family: roboto;
     font-size: 87%;
 }
+
 /* FIN Navbar Bootstrap */
 
 /* index.html*/
@@ -58,11 +69,15 @@ nav ul li {
     color: white;
     font-family: roboto;
 }
+.view-jobs:hover{
+    opacity: 50%;
+
+}
 .trabajopng {
     text-align: center;
     padding-top: 1%;
-
 }
+
 .indexheader nav ul li a {
     text-decoration: none;
     color: white;
@@ -85,7 +100,7 @@ nav ul li {
 }
 /* Fin H1*/
 
-/* Pinterest Gallery */
+/* Pinterest(masonrylayout) Gallery */
 .container {
     columns:5 320px;
     gap: 0.5em;
@@ -102,7 +117,7 @@ nav ul li {
     padding-top: 0.5em;
     object-fit: cover;
     }
-/* Fin Pinterest Gallery */
+/* Fin Pinterest(masonrylayout) Gallery */
 
 /* H2 Custom - Overlay */
 .overlay {

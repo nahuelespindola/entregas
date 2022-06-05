@@ -85,76 +85,30 @@ nav ul li {
 }
 /* Fin H1*/
 
-/* Grid Fotos */
+/* Pinterest Gallery */
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1%;
-    margin: 5%;
+    columns:5 320px;
+    gap: 0.5em;
+    margin: 1%;
     margin-top: 2%;
-    grid-template-areas: "item1 item2 item3 item3"
-        "item4 item4 item5 item5"
-        "item6 item7 item5 item5"
-        "item8 item9 item9 item9";
-    grid-auto-rows: auto;
-}
-/* Fin Grid Fotos */
-
-/* Imagenes Grid Area*/
-.item1 {
-    grid-area: item1;
-    position: relative;
-}
-.item2 {
-    grid-area: item2;
-    position: relative;
-}
-.item3 {
-    grid-area: item3;
-    position: relative
-}
-.item4 {
-    grid-area: item4;
-    position: relative
-}
-.item5 {
-    grid-area: item5;
-    position: relative
-}
-.item6 {
-    grid-area: item6;
-    position: relative
-}
-.item7 {
-    grid-area: item7;
-    position: relative
-}
-.item8 {
-    grid-area: item8;
-    position: relative
-}
-.item9 {
-    grid-area: item9;
-    position: relative
-}
-/* Fin Grid Area */
-
-/* Item(Imagenes) Custom */
-
-.container img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 }
+.title-container{
+    margin-top: 2%;
+}
 
-/* Item(Imagenes) Custom */
+.container img{
+    width: 100%;
+    padding-top: 0.5em;
+    object-fit: cover;
+    }
+/* Fin Pinterest Gallery */
 
 /* H2 Custom - Overlay */
 .overlay {
     color: white;
     bottom: 0;
-    position: absolute;
+    width: 100%;
     background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
     width: 100%;
     margin: 0;
@@ -162,39 +116,8 @@ nav ul li {
     transition: 1s ease;
     overflow: hidden;
 }
-.item1:hover .overlay {
-    height: 50%;
-    cursor: pointer;
-}
-.item2:hover .overlay {
-    height: 50%;
-    cursor: pointer;
-}
-.item3:hover .overlay {
-    height: 50%;
-    cursor: pointer;
-}
-.item4:hover .overlay {
-    height: 44%;
-    cursor: pointer;
-}
-.item5:hover .overlay {
-    height: 50%;
-    cursor: pointer;
-}
-.item6:hover .overlay {
-    height: 50%;
-    cursor: pointer;
-}
-.item7:hover .overlay {
-    height: 50%;
-    cursor: pointer;
-}
-.item8:hover .overlay {
-    height: 50%;
-    cursor: pointer;
-}
-.item9:hover .overlay {
+
+.item:hover .overlay {
     height: 50%;
     cursor: pointer;
 }

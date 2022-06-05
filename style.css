@@ -295,6 +295,26 @@ nav ul li {
     font-size: 105%;
 }
 /* ACA */
+.holasoypablo {
+    display: inline-block;
+    position: relative;
+}
+.holasoypablo::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+.holasoypablo:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
 
 /* GRID Fin */

@@ -80,11 +80,6 @@ nav ul li {
     width: 100%;
     padding-top: 20px;
 }
-
-
-.contenedor-botones {}
-
-
 .boton {
     display: flex;
     align-items: center;
@@ -358,7 +353,9 @@ nav ul li {
     font-size: 30px;
     text-align: center;
 }
-
+.title-contacto{
+    text-align: center;
+}
 .contacto-h4 {
     margin-top: 5%;
 }
@@ -457,6 +454,9 @@ nav ul li {
 @media (max-width: 768px) {
     .formgrid-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .title-contacto{
+        text-align: center;
     }
 }
 

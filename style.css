@@ -111,7 +111,7 @@ nav ul li {
     transition: .3s ease all;
 }
 
-.boton.tres::after {
+.boton.animation::after {
     content: "";
     width: 100%;
     height: 300px;
@@ -124,7 +124,7 @@ nav ul li {
     border-radius: 0px 0px 300px 300px;
 }
 
-.boton.tres:hover::after {
+.boton.animation:hover::after {
     top: 0;
 }
 

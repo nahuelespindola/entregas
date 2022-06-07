@@ -7,28 +7,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: roboto;
     src: url(Roboto-Regular.ttf);
     font-family: tenorsans;
     src: url(TenorSans-Regular.ttf);
 }
+
 /* Navbar Bootstrap */
 
 .navbar-main .active {
     text-decoration: underline white;
     text-underline-offset: 30%;
 }
+
 .container-fluid a {
     color: white;
 }
+
 .nav-item a {
     color: white;
 }
-a.nav-link:hover{
+
+a.nav-link:hover {
     color: gray;
 }
-a.navbar-brand:hover{
+
+a.navbar-brand:hover {
     color: gray;
 }
 
@@ -54,6 +60,7 @@ nav ul li {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 /* Fin Background */
 
 /* Body Index */
@@ -64,15 +71,81 @@ nav ul li {
     font-size: 300%;
     font-family: tenorsans;
 }
+
+
+/* BOTON VER TRABAJOS */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+.contenedor-botones {}
+
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 80px;
+    text-decoration: none;
+    background: #141414;
+    color: #fff;
+    font-family: 'roboto';
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.boton:hover {
+    color: white;
+}
+
+.boton span {
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.boton.tres::after {
+    content: "";
+    width: 100%;
+    height: 300px;
+    background: #272A30;
+    position: absolute;
+    z-index: 1;
+    top: -300px;
+    left: 0;
+    transition: .4s ease-in-out all;
+    border-radius: 0px 0px 300px 300px;
+}
+
+.boton.tres:hover::after {
+    top: 0;
+}
+
+/* BOTON VER TRABAJOS */
+
 .fotografia h2 {
     text-align: center;
     color: white;
     font-family: roboto;
 }
-.view-jobs:hover{
+
+.view-jobs:hover {
     opacity: 50%;
 
 }
+
 .trabajopng {
     text-align: center;
     padding-top: 1%;
@@ -86,6 +159,7 @@ nav ul li {
 .trabajoheader ul li a {
     text-decoration: none;
 }
+
 /* Fin Body Index */
 
 
@@ -98,25 +172,28 @@ nav ul li {
     font-family: tenorsans;
     text-align: center;
 }
+
 /* Fin H1*/
 
 /* Pinterest(masonrylayout) Gallery */
 .container {
-    columns:5 320px;
+    columns: 5 320px;
     gap: 0.5em;
     margin: 1%;
     margin-top: 2%;
     object-fit: cover;
 }
-.title-container{
+
+.title-container {
     margin-top: 2%;
 }
 
-.container img{
+.container img {
     width: 100%;
     padding-top: 0.5em;
     object-fit: cover;
-    }
+}
+
 /* Fin Pinterest(masonrylayout) Gallery */
 
 /* H2 Custom - Overlay */
@@ -136,6 +213,7 @@ nav ul li {
     height: 50%;
     cursor: pointer;
 }
+
 /* Fin H2 Custom - Overlay */
 /* Fin trabajo.html */
 
@@ -153,25 +231,30 @@ nav ul li {
     object-fit: cover;
     height: 100%;
 }
+
 .gridexperiencias div img {
     width: 100%;
     object-fit: cover;
     height: 100%;
 }
+
 .h2experiencias {
     text-align: center;
 }
+
 .item {
     width: 100%;
     object-fit: cover;
     height: 100%;
 }
+
 .item {
     width: 100%;
     object-fit: cover;
     height: 100%;
     position: relative;
 }
+
 /* Fin Grid Experiencias */
 
 /* Overlay Grid-Experiencias */
@@ -186,13 +269,16 @@ nav ul li {
     transition: 1s ease;
     overflow: hidden;
 }
-.overlay h2{
+
+.overlay h2 {
     text-align: center;
 }
+
 .item:hover .overlay {
     height: 50%;
     cursor: pointer;
 }
+
 /* Fin Overlay Grid-Experiencias */
 
 /* Experiencias H2-H3 Custom - Overlay */
@@ -201,11 +287,13 @@ nav ul li {
     padding-top: 5%;
     text-align: center;
 }
+
 .h3experiencias {
     font-size: 90%;
     font-family: roboto;
     padding: 5%;
 }
+
 /* Fin Experiencias H2-H3 Custom - Overlay */
 /* Fin experiencias.html */
 
@@ -216,27 +304,31 @@ nav ul li {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.portrait img{
+
+.portrait img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .texto {
     margin-top: 40%;
     font-family: roboto;
     font-size: 115%;
     padding: 10%;
 }
+
 .parrafo {
     margin-top: 10%;
     font-family: roboto;
     font-size: 105%;
 }
-/* ACA */
+
 .holasoypablo {
     display: inline-block;
     position: relative;
 }
+
 .holasoypablo::after {
     content: '';
     position: absolute;
@@ -249,11 +341,11 @@ nav ul li {
     transform-origin: bottom right;
     transition: transform 0.6s ease-out;
 }
+
 .holasoypablo:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
 
 /* GRID Fin */
 /* Fin sobremi.html */
@@ -261,27 +353,32 @@ nav ul li {
 
 
 /* contacto.html */
-.contacto h1{
+
+.botton-enviar .contacto h1 {
     font-size: 30px;
     text-align: center;
 }
 
-.contacto-h4{
+.contacto-h4 {
     margin-top: 5%;
 }
-.contacto h4{
+
+.contacto h4 {
     font-size: 20px;
     text-align: center;
 }
+
 /* FORMULARIO */
-.formgrid-container{
+.formgrid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.form-container{   
+
+.form-container {
     padding: 10%;
     width: 100%;
 }
+
 /* Fin FORMULARIO */
 /* Fin contacto.html */
 
@@ -290,7 +387,26 @@ nav ul li {
     text-align: center;
     background-color: black;
     color: #fff;
-    }
+}
+
+.mailto {
+    text-decoration: none;
+    color: white;
+}
+
+.mailto:hover {
+    color: gray;
+}
+
+.behanceto {
+    text-decoration: none;
+    color: white;
+}
+
+.behanceto:hover {
+    color: gray;
+}
+
 /* Fin Footer */
 
 
@@ -298,33 +414,49 @@ nav ul li {
 
 /* Media query */
 @media (max-width: 768px) {
-    .trabajopng {
-        margin-top: 30% ;
+    .contenedor {
+        margin-top: 30%;
+    }
+
+    .boton {
+        width: 250px;
+        height: 80px;
+        text-decoration: none;
+        background: #141414;
+        color: #fff;
+        font-family: 'roboto';
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        grid-template-columns: repeat(1, 1fr) ;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media (max-width: 768px) {
     .gridexperiencias {
-        grid-template-columns: repeat(1, 1fr) ;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
+
 @media (max-width: 768px) {
     .conteinersobremi {
-        grid-template-columns: repeat(1, 1fr) ;
+        grid-template-columns: repeat(1, 1fr);
     }
-    .portrait{
+
+    .portrait {
+        margin-top: 10px;
+    }
+
+    .texto {
         margin-top: 10px;
     }
 }
+
 @media (max-width: 768px) {
     .formgrid-container {
-        grid-template-columns: repeat(1, 1fr) ;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

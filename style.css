@@ -3,461 +3,374 @@
 }
 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: roboto;
-    src: url(Roboto-Regular.ttf);
-    font-family: tenorsans;
-    src: url(TenorSans-Regular.ttf);
+  font-family: roboto;
+  src: url(Roboto-Regular.ttf);
+  font-family: tenorsans;
+  src: url(TenorSans-Regular.ttf);
 }
-
 /* Navbar Bootstrap */
-
-.navbar-main .active {
-    text-decoration: underline white;
-    text-underline-offset: 30%;
+header .navbar-main .active {
+  text-decoration: underline white;
+  text-underline-offset: 30%;
 }
-
-.container-fluid a {
-    color: white;
+header .container-fluid a {
+  color: white;
 }
-
-.nav-item a {
-    color: white;
+header .nav-item a {
+  color: white;
 }
-
-a.nav-link:hover {
-    color: gray;
+header a.nav-link:hover {
+  color: gray;
 }
-
-a.navbar-brand:hover {
-    color: gray;
+header a.navbar-brand:hover {
+  color: gray;
 }
-
-
-
-nav ul li {
-    list-style: none;
-    float: left;
-    margin-right: 25px;
-    margin-left: 25px;
-    font-family: roboto;
-    font-size: 87%;
+header nav ul li {
+  list-style: none;
+  float: left;
+  margin-right: 25px;
+  margin-left: 25px;
+  font-family: roboto;
+  font-size: 87%;
 }
 
 /* FIN Navbar Bootstrap */
-
 /* index.html*/
 /* Background */
 .indexbody {
-    background-image: url('imagenes/background/background.png');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: url("imagenes/background/background.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Fin Background */
-
-/* Body Index */
+/*H1 index*/
 .pablogimenez h1 {
-    text-align: center;
-    margin-top: 15%;
-    color: white;
-    font-size: 300%;
-    font-family: tenorsans;
+  text-align: center;
+  margin-top: 15%;
+  color: white;
+  font-size: 300%;
+  font-family: tenorsans;
 }
 
-
+/*Fin H1 index*/
 /* BOTON VER TRABAJOS */
-.contenedor {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-top: 20px;
+section .contenedor {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
 }
-.boton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 80px;
-    text-decoration: none;
-    background: #141414;
-    color: #fff;
-    font-family: 'roboto';
-    font-size: 20px;
-    font-weight: 500;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: .3s ease all;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
+section .boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 80px;
+  text-decoration: none;
+  background: #141414;
+  color: #fff;
+  font-family: "roboto";
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
 }
-
-.boton:hover {
-    color: white;
+section .boton:hover {
+  color: white;
 }
-
-.boton span {
-    position: relative;
-    z-index: 2;
-    transition: .3s ease all;
+section .boton span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s ease all;
+}
+section .fotografia h2 {
+  text-align: center;
+  color: white;
+  font-family: roboto;
+}
+section .fotografia .trabajopng {
+  text-align: center;
+  padding-top: 1%;
+}
+section .indexheader nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+section .trabajoheader ul li a {
+  text-decoration: none;
 }
 
 .boton.animation::after {
-    content: "";
-    width: 100%;
-    height: 300px;
-    background: #272A30;
-    position: absolute;
-    z-index: 1;
-    top: -300px;
-    left: 0;
-    transition: .4s ease-in-out all;
-    border-radius: 0px 0px 300px 300px;
+  content: "";
+  width: 100%;
+  height: 300px;
+  background: #272A30;
+  position: absolute;
+  z-index: 1;
+  top: -300px;
+  left: 0;
+  transition: 0.4s ease-in-out all;
+  border-radius: 0px 0px 300px 300px;
 }
 
 .boton.animation:hover::after {
-    top: 0;
+  top: 0;
 }
 
-/* BOTON VER TRABAJOS */
-
-.fotografia h2 {
-    text-align: center;
-    color: white;
-    font-family: roboto;
-}
-
-.view-jobs:hover {
-    opacity: 50%;
-
-}
-
-.trabajopng {
-    text-align: center;
-    padding-top: 1%;
-}
-
-.indexheader nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-.trabajoheader ul li a {
-    text-decoration: none;
-}
-
+/* FIN BOTON VER TRABAJOS */
 /* Fin Body Index */
-
-
-
 /* trabajo.html */
 /* H1 */
-.h1pablogimenez {
-    color: black;
-    font-size: 150%;
-    font-family: tenorsans;
-    text-align: center;
+.title-container .h1pablogimenez {
+  color: black;
+  font-size: 150%;
+  font-family: tenorsans;
+  text-align: center;
 }
 
 /* Fin H1*/
-
 /* Pinterest(masonrylayout) Gallery */
 .container {
-    columns: 5 320px;
-    gap: 0.5em;
-    margin: 1%;
-    margin-top: 2%;
-    object-fit: cover;
+  columns: 5 320px;
+  gap: 0.5em;
+  margin: 1%;
+  margin-top: 2%;
+  object-fit: cover;
 }
-
-.title-container {
-    margin-top: 2%;
+.container .item {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  position: relative;
 }
-
+.container .title-container {
+  margin-top: 2%;
+}
 .container img {
-    width: 100%;
-    padding-top: 0.5em;
-    object-fit: cover;
+  width: 100%;
+  padding-top: 0.5em;
+  object-fit: cover;
+}
+.container .overlay {
+  color: white;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(rgba(50, 50, 50, 0.4), rgb(0, 0, 1));
+  width: 100%;
+  margin: 0;
+  height: 0;
+  transition: 1s ease;
+  overflow: hidden;
+}
+.container .overlay h2 {
+  text-align: center;
 }
 
 /* Fin Pinterest(masonrylayout) Gallery */
-
-/* H2 Custom - Overlay */
-.overlay {
-    color: white;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
-    width: 100%;
-    margin: 0;
-    height: 0;
-    transition: 1s ease;
-    overflow: hidden;
-}
-
-.item:hover .overlay {
-    height: 50%;
-    cursor: pointer;
-}
-
-/* Fin H2 Custom - Overlay */
 /* Fin trabajo.html */
-
-
-
-
-
 /* experiencias.html */
-/* Grid Experiencias */
+/* H2 Custom - Overlay */
 .gridexperiencias {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 1%;
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1%;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
-
+.gridexperiencias .item {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  position: relative;
+}
 .gridexperiencias div img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
-
-.h2experiencias {
-    text-align: center;
+.gridexperiencias .h2experiencias {
+  text-align: center;
+  padding-top: 5%;
+  text-align: center;
 }
-
-.item {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-}
-
-.item {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    position: relative;
-}
-
-/* Fin Grid Experiencias */
-
-/* Overlay Grid-Experiencias */
-.overlay {
-    color: white;
-    bottom: 0;
-    position: absolute;
-    background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
-    width: 100%;
-    margin: 0;
-    height: 0;
-    transition: 1s ease;
-    overflow: hidden;
-}
-
-.overlay h2 {
-    text-align: center;
+.gridexperiencias .h3experiencias {
+  font-size: 90%;
+  font-family: roboto;
+  padding: 5%;
 }
 
 .item:hover .overlay {
-    height: 50%;
-    cursor: pointer;
+  height: 50%;
+  cursor: pointer;
 }
 
-/* Fin Overlay Grid-Experiencias */
-
-/* Experiencias H2-H3 Custom - Overlay */
-.h2experiencias {
-    font-family: roboto;
-    padding-top: 5%;
-    text-align: center;
+.overlay {
+  color: white;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(rgba(50, 50, 50, 0.4), rgb(0, 0, 1));
+  width: 100%;
+  margin: 0;
+  height: 0;
+  transition: 1s ease;
+  overflow: hidden;
+}
+.overlay h2 {
+  text-align: center;
 }
 
-.h3experiencias {
-    font-size: 90%;
-    font-family: roboto;
-    padding: 5%;
-}
-
-/* Fin Experiencias H2-H3 Custom - Overlay */
 /* Fin experiencias.html */
-
-
 /* sobremi.html */
 /* GRID */
 .conteinersobremi {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-
-.portrait img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.conteinersobremi .portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-.texto {
-    margin-top: 40%;
-    font-family: roboto;
-    font-size: 115%;
-    padding: 10%;
+.conteinersobremi .texto {
+  margin-top: 40%;
+  font-family: roboto;
+  font-size: 115%;
+  padding: 10%;
 }
-
-.parrafo {
-    margin-top: 10%;
-    font-family: roboto;
-    font-size: 105%;
+.conteinersobremi .parrafo {
+  margin-top: 10%;
+  font-family: roboto;
+  font-size: 105%;
 }
-
-.holasoypablo {
-    display: inline-block;
-    position: relative;
+.conteinersobremi .holasoypablo {
+  display: inline-block;
+  position: relative;
 }
 
 .holasoypablo::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color: blue;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.6s ease-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
 }
 
 .holasoypablo:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* GRID Fin */
 /* Fin sobremi.html */
-
-
-
 /* contacto.html */
-
-.botton-enviar .contacto h1 {
-    font-size: 30px;
-    text-align: center;
-}
-.title-contacto{
-    text-align: center;
-}
-.contacto-h4 {
-    margin-top: 5%;
-}
-
-.contacto h4 {
-    font-size: 20px;
-    text-align: center;
-}
-
-/* FORMULARIO */
 .formgrid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-
-.form-container {
-    padding: 10%;
-    width: 100%;
+.formgrid-container .title-contacto {
+  text-align: center;
+}
+.formgrid-container .contacto-h4 {
+  margin-top: 5%;
+}
+.formgrid-container .contacto h4 {
+  font-size: 20px;
+  text-align: center;
+}
+.formgrid-container .form-container {
+  padding: 10%;
+  width: 100%;
 }
 
 /* Fin FORMULARIO */
 /* Fin contacto.html */
-
 /* Footer */
 .footer {
-    text-align: center;
-    background-color: black;
-    color: #fff;
+  text-align: center;
+  background-color: black;
+  color: #fff;
 }
-
-.mailto {
-    text-decoration: none;
-    color: white;
+.footer .behanceto {
+  text-decoration: none;
+  color: white;
+}
+.footer .mailto {
+  text-decoration: none;
+  color: white;
 }
 
 .mailto:hover {
-    color: gray;
-}
-
-.behanceto {
-    text-decoration: none;
-    color: white;
+  color: gray;
 }
 
 .behanceto:hover {
-    color: gray;
+  color: gray;
 }
 
 /* Fin Footer */
-
-
-
-
 /* Media query */
 @media (max-width: 768px) {
-    .contenedor {
-        margin-top: 30%;
-    }
-
-    .boton {
-        width: 250px;
-        height: 80px;
-        text-decoration: none;
-        background: #141414;
-        color: #fff;
-        font-family: 'roboto';
-    }
+  .contenedor {
+    margin-top: 30%;
+  }
+  .contenedor .boton {
+    width: 250px;
+    height: 80px;
+    text-decoration: none;
+    background: #141414;
+    color: #fff;
+    font-family: "roboto";
+  }
 }
-
 @media (max-width: 768px) {
-    .container {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-
 @media (max-width: 768px) {
-    .gridexperiencias {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .gridexperiencias {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-
 @media (max-width: 768px) {
-    .conteinersobremi {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .portrait {
-        margin-top: 10px;
-    }
-
-    .texto {
-        margin-top: 10px;
-    }
+  .conteinersobremi {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .conteinersobremi .portrait {
+    margin-top: 10px;
+  }
+  .conteinersobremi .texto {
+    margin-top: 10px;
+  }
 }
-
 @media (max-width: 768px) {
-    .formgrid-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .title-contacto{
-        text-align: center;
-    }
+  .formgrid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .formgrid-container .title-contacto {
+    text-align: center;
+  }
 }
-
 /* Media query */
+
+/*# sourceMappingURL=style.css.map */

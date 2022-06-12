@@ -1,0 +1,29 @@
+@import "variables-colores";
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: $negro;
+    color: $blanco;
+
+    .behanceto {
+        text-decoration: none;
+        color: $blanco;
+    }
+
+    .mailto {
+        text-decoration: none;
+        color: $blanco;
+    }
+    .mailto {
+        &:hover {
+            color: $gris;
+        }
+    }
+    .behanceto {
+        &:hover {
+            color: $gris;
+        }
+    } 
+}
+
+/* Fin Footer */

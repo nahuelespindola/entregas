@@ -1,0 +1,28 @@
+@import "variables-colores";
+
+/* contacto.html */
+.formgrid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .title-contacto {
+        text-align: center;
+    }
+
+    .contacto-h4 {
+        margin-top: 5%;
+    }
+
+    .contacto h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .form-container {
+        padding: 10%;
+        width: 100%;
+    }
+}
+
+/* Fin FORMULARIO */
+/* Fin contacto.html */

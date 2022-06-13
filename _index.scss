@@ -1,113 +1,184 @@
 @import "variables-colores";
+
 /* index.html*/
-/* Background */
-.indexbody {
-    background-image: url('imagenes/background/background.png');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-/* Fin Background */
-/*H1 index*/
-.pablogimenez {
-    h1 {
-        text-align: center;
-        margin-top: 15%;
-        color: $blanco;
-        font-size: 300%;
-        font-family: tenorsans;
-    }
-}
-/*Fin H1 index*/
-/* BOTON VER TRABAJOS */
-section {
-    .contenedor {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding-top: 20px;
-    }
-    .boton {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 400px;
-        height: 80px;
-        text-decoration: none;
-        background: $negro-secundario;
-        color: $blanco;
-        font-family: 'roboto';
-        font-size: 20px;
-        font-weight: 500;
-        border: none;
-        cursor: pointer;
-        text-transform: uppercase;
-        transition: .3s ease all;
-        border-radius: 5px;
-        position: relative;
-        overflow: hidden;
-    }
-    //HOVER SIN HACER//
-    .boton:hover {
-        color: $blanco;
-    }
-    .boton span {
-        position: relative;
-        z-index: 2;
-        transition: .3s ease all;
-    }
-    //HOVER SIN HACER//
-    .fotografia {
-        h2 {
-            text-align: center;
+.index-container {
+    display:block;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    .index-flex {
+        .overlay {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background: #1c1c1c;
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+        .index-video {
+            video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                overflow: hidden;
+            }
+        }
+
+        .section {
+            .pablogimenez {
+                h1 {
+                    text-align: center;
+                    margin-top: 15%;
+                    color: $blanco;
+                    font-size: 300%;
+                    font-family: tenorsans;
+                }
+            }
+
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            opacity: 0.8;
+        }
+
+        .boton {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 80px;
+            text-decoration: none;
+            background: $negro-secundario;
             color: $blanco;
-            font-family: roboto;
+            font-family: 'roboto';
+            font-size: 20px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: .3s ease all;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
         }
-        .trabajopng {
-            text-align: center;
-            padding-top: 1%;
+
+        .boton {
+            &:hover {
+                color: $blanco;
+
+            }
+
+            span {
+                position: relative;
+                z-index: 2;
+                transition: .3s ease all;
+            }
         }
-    }
-    .indexheader {
-        nav {
-            ul {
-                li {
-                    a {
-                        text-decoration: none;
-                        color: $blanco;
+
+        .fotografia {
+            h2 {
+                text-align: center;
+                color: $blanco;
+                font-family: roboto;
+            }
+
+            .trabajopng {
+                text-align: center;
+                padding-top: 1%;
+            }
+        }
+
+        .indexheader {
+            nav {
+                ul {
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: $blanco;
+                        }
                     }
                 }
             }
         }
-    }
-    .trabajoheader {
-        ul {
-            li {
-                a {
-                    text-decoration: none;
+
+        .trabajoheader {
+            ul {
+                li {
+                    a {
+                        text-decoration: none;
+                    }
                 }
             }
         }
-    }
-    .boton.animation {
-        &::after {
-            content: "";
-            width: 100%;
-            height: 300px;
-            background: $gris-secundario;
-            position: absolute;
-            z-index: 1;
-            top: -300px;
-            left: 0;
-            transition: .4s ease-in-out all;
-            border-radius: 0px 0px 300px 300px;
-        }
-        &:hover {
+
+        .boton.animation {
             &::after {
-                top: 0;
+                content: "";
+                width: 100%;
+                height: 300px;
+                background: $gris-secundario;
+                position: absolute;
+                z-index: 1;
+                top: -300px;
+                left: 0;
+                transition: .4s ease-in-out all;
+                border-radius: 0px 0px 300px 300px;
+            }
+
+            &:hover {
+                &::after {
+                    top: 0;
+                }
+            }
+        }
+
+    }
+
+    .index-cards{
+        display: flex;
+        margin-top: 20%;
+        justify-content: center;
+        background: $negro;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        .card{
+            position: relative;
+            margin: auto;
+            width: 150px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 3px 5px 5px rgba( 3, 32, 51, .8);
+            img{
+                border-radius: 8px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            h4{
+                border-radius: 8px;
+                width: 100%;
+                color: white;
+                background-color: $negro-secundario;
+                opacity: 50%;
+                position: absolute;
             }
         }
     }
+
+
 }
+
+
+
+
 /* Fin Body Index */

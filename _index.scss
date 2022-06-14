@@ -1,5 +1,6 @@
 @import "variables-colores";
 
+
 /* index.html*/
 .index-container {
     display:block;
@@ -19,6 +20,7 @@
         }
 
         .index-video {
+           
             video {
                 position: absolute;
                 top: 0;
@@ -34,19 +36,33 @@
         .section {
             .pablogimenez {
                 h1 {
-                    text-align: center;
-                    margin-top: 15%;
+                    display: flex;
                     color: $blanco;
-                    font-size: 300%;
-                    font-family: tenorsans;
+                    font-size:9rem;
+                    margin-left: 140px;
+                    margin-top: 60px;
+                    font-family: 'Bebas Neue', cursive;
                 }
             }
 
+            .fotografia {
+                h2 {
+                    margin-left: 190px;
+                    color: $blanco;
+                    font-family: 'Bebas Neue';
+                }
+    
+                .trabajopng {
+                    text-align: center;
+                    padding-top: 1%;
+                }
+            }
         }
 
         .contenedor {
             display: flex;
-            justify-content: center;
+            justify-content:right;
+            padding-right: 190px;
             width: 100%;
             opacity: 0.8;
         }
@@ -60,7 +76,7 @@
             text-decoration: none;
             background: $negro-secundario;
             color: $blanco;
-            font-family: 'roboto';
+            font-family: roboto;
             font-size: 20px;
             font-weight: 500;
             border: none;
@@ -85,18 +101,7 @@
             }
         }
 
-        .fotografia {
-            h2 {
-                text-align: center;
-                color: $blanco;
-                font-family: roboto;
-            }
-
-            .trabajopng {
-                text-align: center;
-                padding-top: 1%;
-            }
-        }
+        
 
         .indexheader {
             nav {
@@ -146,35 +151,107 @@
 
     .index-cards{
         display: flex;
-        margin-top: 20%;
+        margin-top: 12%;
         justify-content: center;
         background: $negro;
         flex-wrap: wrap;
         min-height: 100vh;
+        .top-text-card{
+        text-align: center;
+        padding: 40px;
+        
+        h1{
+            
+            padding-top: 50px;
+            color: $blanco;
+            font-family: 'Bebas Neue';
+        }
+        h5{
+            
+            color: $blanco;
+            font-family: 'roboto';
+            font-size: small;
+            padding: 50px;
+        }
+        }
+
         .card{
-            position: relative;
-            margin: auto;
+
+            border-radius: 0.1px;
+           margin: 20px;
             width: 150px;
             height: 200px;
-            border-radius: 8px;
-            box-shadow: 3px 5px 5px rgba( 3, 32, 51, .8);
+            border: none;
+            
+            box-shadow: 1px 3px 15px #2f2f2f;
             img{
-                border-radius: 8px;
+                
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                
+                
             }
             h4{
-                border-radius: 8px;
                 width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 color: white;
-                background-color: $negro-secundario;
-                opacity: 50%;
                 position: absolute;
+                
+               
+                text-align: center;
+                width: 100%;
+                
+                margin: 0;
+                background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
+                opacity: 20%;
+                font-family:'Bebas Neue' ;
+                font-size: 1.32rem;
+                transition: .5s;
+            &:hover{
+                opacity: 1;
+
             }
+                
+            }
+           
         }
     }
+.index-cameraman{
+    background-color: $negro;
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 150px;
+    .cameraman{
+        img{width: 100%;}
+    }
+    .cameraman-text{
+    opacity: 50%;
+    transition: 1s;
 
+        &:hover{opacity: 100%;
+            cursor: pointer;
+            
+    
+        }
+    padding: 40px;
+    h1{
+        color: $blanco;
+        text-align: center;
+        font-family: 'Bebas Neue';   }
+        h4{
+            color: #555555;
+            text-align: center;
+            font-family: roboto;
+            font-size: 1.2rem;
+        }
+    }
+}
 
 }
 

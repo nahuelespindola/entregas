@@ -57,15 +57,26 @@ header nav ul li {
   overflow: hidden;
 }
 .index-container .index-flex .section .pablogimenez h1 {
-  text-align: center;
-  margin-top: 15%;
+  display: flex;
   color: white;
-  font-size: 300%;
-  font-family: tenorsans;
+  font-size: 9rem;
+  margin-left: 140px;
+  margin-top: 60px;
+  font-family: "Bebas Neue", cursive;
+}
+.index-container .index-flex .section .fotografia h2 {
+  margin-left: 190px;
+  color: white;
+  font-family: "Bebas Neue";
+}
+.index-container .index-flex .section .fotografia .trabajopng {
+  text-align: center;
+  padding-top: 1%;
 }
 .index-container .index-flex .contenedor {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  padding-right: 190px;
   width: 100%;
   opacity: 0.8;
 }
@@ -78,7 +89,7 @@ header nav ul li {
   text-decoration: none;
   background: #141414;
   color: white;
-  font-family: "roboto";
+  font-family: roboto;
   font-size: 20px;
   font-weight: 500;
   border: none;
@@ -96,15 +107,6 @@ header nav ul li {
   position: relative;
   z-index: 2;
   transition: 0.3s ease all;
-}
-.index-container .index-flex .fotografia h2 {
-  text-align: center;
-  color: white;
-  font-family: roboto;
-}
-.index-container .index-flex .fotografia .trabajopng {
-  text-align: center;
-  padding-top: 1%;
 }
 .index-container .index-flex .indexheader nav ul li a {
   text-decoration: none;
@@ -130,33 +132,90 @@ header nav ul li {
 }
 .index-container .index-cards {
   display: flex;
-  margin-top: 20%;
+  margin-top: 12%;
   justify-content: center;
   background: black;
   flex-wrap: wrap;
   min-height: 100vh;
 }
+.index-container .index-cards .top-text-card {
+  text-align: center;
+  padding: 40px;
+}
+.index-container .index-cards .top-text-card h1 {
+  padding-top: 50px;
+  color: white;
+  font-family: "Bebas Neue";
+}
+.index-container .index-cards .top-text-card h5 {
+  color: white;
+  font-family: "roboto";
+  font-size: small;
+  padding: 50px;
+}
 .index-container .index-cards .card {
-  position: relative;
-  margin: auto;
+  border-radius: 0.1px;
+  margin: 20px;
   width: 150px;
   height: 200px;
-  border-radius: 8px;
-  box-shadow: 3px 5px 5px rgba(3, 32, 51, 0.8);
+  border: none;
+  box-shadow: 1px 3px 15px #2f2f2f;
 }
 .index-container .index-cards .card img {
-  border-radius: 8px;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .index-container .index-cards .card h4 {
-  border-radius: 8px;
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
-  background-color: #141414;
-  opacity: 50%;
   position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  background: linear-gradient(rgba(50, 50, 50, 0.4), rgb(0, 0, 1));
+  opacity: 20%;
+  font-family: "Bebas Neue";
+  font-size: 1.32rem;
+  transition: 0.5s;
+}
+.index-container .index-cards .card h4:hover {
+  opacity: 1;
+}
+.index-container .index-cameraman {
+  background-color: black;
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-left: 150px;
+}
+.index-container .index-cameraman .cameraman img {
+  width: 100%;
+}
+.index-container .index-cameraman .cameraman-text {
+  opacity: 50%;
+  transition: 1s;
+  padding: 40px;
+}
+.index-container .index-cameraman .cameraman-text:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+.index-container .index-cameraman .cameraman-text h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bebas Neue";
+}
+.index-container .index-cameraman .cameraman-text h4 {
+  color: #555555;
+  text-align: center;
+  font-family: roboto;
+  font-size: 1.2rem;
 }
 
 /* Fin Body Index */
@@ -165,7 +224,7 @@ header nav ul li {
 .title-container .h1pablogimenez {
   color: black;
   font-size: 150%;
-  font-family: tenorsans;
+  font-family: "Bebas Neue";
   text-align: center;
 }
 
@@ -204,6 +263,7 @@ header nav ul li {
   overflow: hidden;
 }
 .container .overlay h2 {
+  font-family: "Bebas Neue";
   text-align: center;
 }
 .container .item:hover .overlay {
@@ -238,10 +298,11 @@ header nav ul li {
   text-align: center;
   padding-top: 5%;
   text-align: center;
+  font-family: "Bebas Neue";
 }
 .gridexperiencias .h3experiencias {
   font-size: 90%;
-  font-family: roboto;
+  font-family: "Bebas Neue";
   padding: 5%;
 }
 .gridexperiencias .item:hover .overlay {
@@ -353,26 +414,66 @@ header nav ul li {
 }
 
 /* Fin Footer */
+@font-face {
+  font-family: roboto;
+  src: url(Roboto-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: roboto;
-  src: url(Roboto-Regular.ttf);
-  font-family: tenorsans;
-  src: url(TenorSans-Regular.ttf);
-}
 /* Media query */
 @media (max-width: 768px) {
-  .index-container .section .contenedor .contenedor-botones .boton {
+  .index-container .index-flex .index-video video {
+    height: 25%;
+  }
+  .index-container .index-flex .section .pablogimenez h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 6rem;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .index-container .index-flex .section .fotografia h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .index-container .index-flex .contenedor {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .index-container .index-flex .contenedor .contenedor-botones .boton {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 250px;
     height: 80px;
+  }
+  .index-container .index-flex .index-cameraman {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .index-container .index-flex .index-cameraman .cameraman {
+    width: 100%;
+  }
+  .index-container .index-flex .index-cameraman .cameraman img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .index-container .index-cameraman {
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+  .index-container .index-cameraman .cameraman img {
+    width: 100%;
+    padding: 10%;
   }
 }
 @media (max-width: 768px) {

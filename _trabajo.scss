@@ -5,7 +5,7 @@
     .h1pablogimenez {
         color: $negro;
         font-size: 150%;
-        font-family: tenorsans;
+        font-family: 'Bebas Neue';
         text-align: center;
     }
 }
@@ -42,6 +42,7 @@
         transition: 1s ease;
         overflow: hidden;
         h2 {
+            font-family: 'Bebas Neue';
             text-align: center;
         }
     }

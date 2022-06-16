@@ -135,11 +135,11 @@ header nav ul li {
   justify-content: center;
   width: 100%;
   opacity: 0.6;
-  padding-top: 5px;
+  padding-top: 40px;
   padding-bottom: 200px;
   margin-left: 10px;
 }
-.index-container .index-flex .section .contenedor-botones .boton {
+.index-container .index-flex .section .contenedor .contenedor-botones .boton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,10 +166,10 @@ header nav ul li {
     width: 50px;
   }
 }
-.index-container .index-flex .section .contenedor-botones .boton:hover {
+.index-container .index-flex .section .contenedor .contenedor-botones .boton:hover {
   color: white;
 }
-.index-container .index-flex .section .contenedor-botones .boton span {
+.index-container .index-flex .section .contenedor .contenedor-botones .boton span {
   position: relative;
   z-index: 2;
   transition: 0.3s ease all;

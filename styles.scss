@@ -31,24 +31,43 @@
 @media (max-width: 768px) {
  .index-container{
     .index-flex{
-        .index-video{
-            video{
-                height: 25%;
-            }
-        }
+        background-size: cover;
+        background-position: 20%;
         .section{
             .pablogimenez{
-                
-                h1{
-                    display: flex;
-                    justify-content: center;
-                    text-align: center;
-                    font-size: 6rem;
-                    margin-left: 0;
-                    margin-top: 0;
+                display: inline-block;
+                .fotografia{
+                    h1{
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        padding-top: 3rem;
+                        font-size: 6rem;
+                        margin-left: 0px;
                 }
-            
-               
+                h2{
+                    display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        margin-left: 0px;
+                        padding-top: 2px;
+                }
+                h4{
+                    display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        margin-left: 0px;
+                        padding: 10px;
+                }
+                }    
+                .camera{
+                    h4{
+                        display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            font-size: 0.7rem;
+                    }
+                }   
             }
             .fotografia{
                 h2{
@@ -56,6 +75,7 @@
                     text-align: center;
                 }
             }
+            
          }
         .contenedor{
             display: flex;
@@ -91,6 +111,7 @@
         padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
+    padding: 0;
         
         .cameraman{
             img{

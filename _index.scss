@@ -3,11 +3,20 @@
 
 /* index.html*/
 .index-container {
-    display:block;
+    display: block;
     min-height: 100vh;
     position: relative;
     overflow: hidden;
+
     .index-flex {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.1), rgba(0, 0, 0.9, 0.9)), url(imagenes/background/background-cameraman.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+
+
+
         .overlay {
             position: absolute;
             top: 0%;
@@ -19,89 +28,188 @@
             z-index: -1;
         }
 
-        .index-video {
-           
-            video {
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-                overflow: hidden;
-            }
-        }
+
 
         .section {
             .pablogimenez {
-                h1 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .fotografia {
+
+                    .h1 {
+                        display: flex;
+                        position: relative;
+
+                        h1 {
+                            display: flex;
+                            color: $blanco;
+                            font-size: 9rem;
+                            margin-left: 140px;
+                            padding-top: 40px;
+                            font-family: 'Bebas Neue', cursive;
+                            animation: h1 4s 1;
+
+                            @keyframes h1 {
+                                0% {
+                                    opacity: 0%;
+                                    letter-spacing: 20px;
+                                    margin-top: 40px;
+                                }
+                            }
+                        }
+
+                        h2 {
+                            padding-top: 50px;
+                            margin-left: 155px;
+                            color: $blanco;
+                            font-family: 'Bebas Neue';
+                            position: absolute;
+                            bottom: -40px;
+
+                            animation: h2 3s 1;
+
+                            @keyframes h2 {
+                                0% {
+                                    opacity: 0%;
+                                    bottom: 60px;
+                                }
+
+                                30% {
+                                    opacity: 0%;
+                                    bottom: 30px;
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                    .h6 {
+                        position: absolute;
+                        bottom: -150px;
+                        margin-left: 155px;
+                        color: $blanco;
+                        font-family: roboto;
+                        font-size: 3rem;
+                        animation: h6 3s 1;
+
+                        @keyframes h6 {
+                            0% {
+                                opacity: 0%;
+
+                            }
+
+                            60% {
+                                opacity: 0%;
+                                bottom: -80px;
+
+                            }
+
+                        }
+                    }
+                }
+
+
+
+
+
+
+
+
+
+                .camera {
+                    
+                    h4 {
+                        padding-top: 80px;
+                        text-align: center;
+                        color: $blanco;
+                        font-family: roboto;
+                        font-size: 0.9rem;
+                    }
+
+                    img {
+                        width: 90%;
+                        animation: rotate 3s 1;
+
+                        @keyframes rotate {
+                            0% {
+                                opacity: 0%;
+                                transform: rotate(5deg);
+                            }
+
+                        }
+                    }
+
+
+
+                }
+            }
+
+            .contenedor {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                opacity: 0.6;
+                padding-top: 5px;
+                padding-bottom: 200px;
+                margin-left: 10px;
+            }
+
+            .contenedor-botones {
+                .boton {
                     display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 400px;
+                    height: 80px;
+                    text-decoration: none;
+                    background: $negro-secundario;
                     color: $blanco;
-                    font-size:9rem;
-                    margin-left: 140px;
-                    margin-top: 60px;
                     font-family: 'Bebas Neue', cursive;
+                    font-size: 20px;
+                    font-weight: 500;
+                    border: none;
+
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    transition: .3s ease all;
+                    border-radius: 5px;
+                    position: relative;
+                    overflow: hidden;
+                    animation: boton 4s 1;
+
+                    @keyframes boton {
+                        0% {
+                            opacity: 0%;
+                            width: 50px;
+                        }
+
+                    }
+                }
+
+                .boton {
+                    &:hover {
+                        color: $blanco;
+
+                    }
+
+                    span {
+                        position: relative;
+                        z-index: 2;
+                        transition: .3s ease all;
+                    }
                 }
             }
 
-            .fotografia {
-                h2 {
-                    margin-left: 190px;
-                    color: $blanco;
-                    font-family: 'Bebas Neue';
-                }
-    
-                .trabajopng {
-                    text-align: center;
-                    padding-top: 1%;
-                }
-            }
+
+
         }
 
-        .contenedor {
-            display: flex;
-            justify-content:right;
-            padding-right: 190px;
-            width: 100%;
-            opacity: 0.8;
-        }
 
-        .boton {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 400px;
-            height: 80px;
-            text-decoration: none;
-            background: $negro-secundario;
-            color: $blanco;
-            font-family: roboto;
-            font-size: 20px;
-            font-weight: 500;
-            border: none;
-            cursor: pointer;
-            text-transform: uppercase;
-            transition: .3s ease all;
-            border-radius: 5px;
-            position: relative;
-            overflow: hidden;
-        }
 
-        .boton {
-            &:hover {
-                color: $blanco;
 
-            }
-
-            span {
-                position: relative;
-                z-index: 2;
-                transition: .3s ease all;
-            }
-        }
-
-        
 
         .indexheader {
             nav {
@@ -147,111 +255,161 @@
             }
         }
 
+
     }
 
-    .index-cards{
+    .index-cards {
         display: flex;
-        margin-top: 12%;
         justify-content: center;
         background: $negro;
         flex-wrap: wrap;
         min-height: 100vh;
-        .top-text-card{
-        text-align: center;
-        padding: 40px;
-        
-        h1{
-            
-            padding-top: 50px;
-            color: $blanco;
-            font-family: 'Bebas Neue';
-        }
-        h5{
-            
-            color: $blanco;
-            font-family: 'roboto';
-            font-size: small;
-            padding: 50px;
-        }
-        }
 
-        .card{
+        .index-cards-hover {
+            opacity: 0%;
+            transition: 2s;
 
-            border-radius: 0.1px;
-           margin: 20px;
-            width: 150px;
-            height: 200px;
-            border: none;
-            
-            box-shadow: 1px 3px 15px #2f2f2f;
-            img{
-                
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                
-                
-            }
-            h4{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                position: absolute;
-                
+            &:hover {
+                opacity: 100%;
+                margin-top: 50px;
+                h5{
+                    transition: 3s;
+                   padding: 40px;
+                }
+                .cards-line{
+               .card{
+                margin-left: 50px;
+                transition: 3s;
+               }
                
+                }
+            }
+
+            .top-text-card {
                 text-align: center;
+                padding: 40px;
+
+                h1 {
+
+                    color: $blanco;
+                    font-family: 'Bebas Neue';
+                    transition: 3s;
+                }
+
+                h5 {
+
+                    color: $blanco;
+                    font-family: 'roboto';
+                    font-size: small;
+                    padding: -20px;
+                    opacity: 100%;
+                    transition: 3s;
+                }
+            }
+
+            .cards-line {
+                display: flex;
+                justify-content: center;
+                background: $negro;
+                flex-wrap: wrap;
+                transition: 3s;
+
+                .card {
+
+                    border-radius: 0.1px;
+                    margin: 15px;
+                    width: 150px;
+                    height: 200px;
+                    border: none;
+                    transition: 3s;
+
+                    box-shadow: 1px 3px 15px #2f2f2f;
+
+                    img {
+
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+
+
+                    }
+
+                    h4 {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        position: absolute;text-align: center;
+                        width: 100%;
+
+                        margin: 0;
+                        background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
+                        opacity: 20%;
+                        font-family: 'Bebas Neue';
+                        font-size: 1.32rem;
+                        transition: .5s;
+
+                        &:hover {
+                            opacity: 1;
+
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+
+
+
+
+    .index-cameraman {
+        background-color: $negro;
+        display: flex;
+        padding: 60px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+
+        .cameraman {
+            img {
                 width: 100%;
-                
-                margin: 0;
-                background: linear-gradient(rgba(50, 50, 50, 0.4), rgba(0, 0, 1, 1));
-                opacity: 20%;
-                font-family:'Bebas Neue' ;
-                font-size: 1.32rem;
-                transition: .5s;
-            &:hover{
-                opacity: 1;
+            }
+        }
+
+        .cameraman-text {
+            opacity: 50%;
+            transition: 1s;
+
+            &:hover {
+                opacity: 100%;
+                cursor: pointer;
+
 
             }
-                
-            }
-           
-        }
-    }
-.index-cameraman{
-    background-color: $negro;
-    display: flex;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    padding-left: 150px;
-    .cameraman{
-        img{width: 100%;}
-    }
-    .cameraman-text{
-    opacity: 50%;
-    transition: 1s;
 
-        &:hover{opacity: 100%;
-            cursor: pointer;
-            
-    
-        }
-    padding: 40px;
-    h1{
-        color: $blanco;
-        text-align: center;
-        font-family: 'Bebas Neue';   }
-        h4{
-            color: #555555;
-            text-align: center;
-            font-family: roboto;
-            font-size: 1.2rem;
+            padding: 40px;
+
+            h1 {
+                color: $blanco;
+                text-align: center;
+                font-family: 'Bebas Neue';
+            }
+
+            h4 {
+                color: #555555;
+                text-align: center;
+                font-family: roboto;
+                font-size: 1.2rem;
+            }
         }
     }
-}
 
 }
 

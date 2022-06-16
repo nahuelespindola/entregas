@@ -36,6 +36,12 @@ header nav ul li {
   position: relative;
   overflow: hidden;
 }
+.index-container .index-flex {
+  background-image: linear-gradient(rgba(10, 10, 10, 0.1), rgba(0, 0, 1, 0.9)), url(imagenes/background/background-cameraman.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .index-container .index-flex .overlay {
   position: absolute;
   top: 0%;
@@ -46,41 +52,94 @@ header nav ul li {
   opacity: 0.4;
   z-index: -1;
 }
-.index-container .index-flex .index-video video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  overflow: hidden;
+.index-container .index-flex .section .pablogimenez {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.index-container .index-flex .section .pablogimenez h1 {
+.index-container .index-flex .section .pablogimenez .fotografia .h1 {
+  display: flex;
+  position: relative;
+}
+.index-container .index-flex .section .pablogimenez .fotografia .h1 h1 {
   display: flex;
   color: white;
   font-size: 9rem;
   margin-left: 140px;
-  margin-top: 60px;
+  padding-top: 40px;
   font-family: "Bebas Neue", cursive;
+  animation: h1 4s 1;
 }
-.index-container .index-flex .section .fotografia h2 {
-  margin-left: 190px;
+@keyframes h1 {
+  0% {
+    opacity: 0%;
+    letter-spacing: 20px;
+    margin-top: 40px;
+  }
+}
+.index-container .index-flex .section .pablogimenez .fotografia .h1 h2 {
+  padding-top: 50px;
+  margin-left: 155px;
   color: white;
   font-family: "Bebas Neue";
+  position: absolute;
+  bottom: -40px;
+  animation: h2 3s 1;
 }
-.index-container .index-flex .section .fotografia .trabajopng {
+@keyframes h2 {
+  0% {
+    opacity: 0%;
+    bottom: 60px;
+  }
+  30% {
+    opacity: 0%;
+    bottom: 30px;
+  }
+}
+.index-container .index-flex .section .pablogimenez .fotografia .h6 {
+  position: absolute;
+  bottom: -150px;
+  margin-left: 155px;
+  color: white;
+  font-family: roboto;
+  font-size: 3rem;
+  animation: h6 3s 1;
+}
+@keyframes h6 {
+  0% {
+    opacity: 0%;
+  }
+  60% {
+    opacity: 0%;
+    bottom: -80px;
+  }
+}
+.index-container .index-flex .section .pablogimenez .camera h4 {
+  padding-top: 80px;
   text-align: center;
-  padding-top: 1%;
+  color: white;
+  font-family: roboto;
+  font-size: 0.9rem;
 }
-.index-container .index-flex .contenedor {
+.index-container .index-flex .section .pablogimenez .camera img {
+  width: 90%;
+  animation: rotate 3s 1;
+}
+@keyframes rotate {
+  0% {
+    opacity: 0%;
+    transform: rotate(5deg);
+  }
+}
+.index-container .index-flex .section .contenedor {
   display: flex;
-  justify-content: right;
-  padding-right: 190px;
+  justify-content: center;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.6;
+  padding-top: 5px;
+  padding-bottom: 200px;
+  margin-left: 10px;
 }
-.index-container .index-flex .boton {
+.index-container .index-flex .section .contenedor-botones .boton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +148,7 @@ header nav ul li {
   text-decoration: none;
   background: #141414;
   color: white;
-  font-family: roboto;
+  font-family: "Bebas Neue", cursive;
   font-size: 20px;
   font-weight: 500;
   border: none;
@@ -99,11 +158,18 @@ header nav ul li {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+  animation: boton 4s 1;
 }
-.index-container .index-flex .boton:hover {
+@keyframes boton {
+  0% {
+    opacity: 0%;
+    width: 50px;
+  }
+}
+.index-container .index-flex .section .contenedor-botones .boton:hover {
   color: white;
 }
-.index-container .index-flex .boton span {
+.index-container .index-flex .section .contenedor-botones .boton span {
   position: relative;
   z-index: 2;
   transition: 0.3s ease all;
@@ -132,41 +198,66 @@ header nav ul li {
 }
 .index-container .index-cards {
   display: flex;
-  margin-top: 12%;
   justify-content: center;
   background: black;
   flex-wrap: wrap;
   min-height: 100vh;
 }
-.index-container .index-cards .top-text-card {
+.index-container .index-cards .index-cards-hover {
+  opacity: 0%;
+  transition: 2s;
+}
+.index-container .index-cards .index-cards-hover:hover {
+  opacity: 100%;
+  margin-top: 50px;
+}
+.index-container .index-cards .index-cards-hover:hover h5 {
+  transition: 3s;
+  padding: 40px;
+}
+.index-container .index-cards .index-cards-hover:hover .cards-line .card {
+  margin-left: 50px;
+  transition: 3s;
+}
+.index-container .index-cards .index-cards-hover .top-text-card {
   text-align: center;
   padding: 40px;
 }
-.index-container .index-cards .top-text-card h1 {
-  padding-top: 50px;
+.index-container .index-cards .index-cards-hover .top-text-card h1 {
   color: white;
   font-family: "Bebas Neue";
+  transition: 3s;
 }
-.index-container .index-cards .top-text-card h5 {
+.index-container .index-cards .index-cards-hover .top-text-card h5 {
   color: white;
   font-family: "roboto";
   font-size: small;
-  padding: 50px;
+  padding: -20px;
+  opacity: 100%;
+  transition: 3s;
 }
-.index-container .index-cards .card {
+.index-container .index-cards .index-cards-hover .cards-line {
+  display: flex;
+  justify-content: center;
+  background: black;
+  flex-wrap: wrap;
+  transition: 3s;
+}
+.index-container .index-cards .index-cards-hover .cards-line .card {
   border-radius: 0.1px;
-  margin: 20px;
+  margin: 15px;
   width: 150px;
   height: 200px;
   border: none;
+  transition: 3s;
   box-shadow: 1px 3px 15px #2f2f2f;
 }
-.index-container .index-cards .card img {
+.index-container .index-cards .index-cards-hover .cards-line .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.index-container .index-cards .card h4 {
+.index-container .index-cards .index-cards-hover .cards-line .card h4 {
   width: 100%;
   height: 100%;
   display: flex;
@@ -184,15 +275,15 @@ header nav ul li {
   font-size: 1.32rem;
   transition: 0.5s;
 }
-.index-container .index-cards .card h4:hover {
+.index-container .index-cards .index-cards-hover .cards-line .card h4:hover {
   opacity: 1;
 }
 .index-container .index-cameraman {
   background-color: black;
   display: flex;
+  padding: 60px;
   padding-top: 150px;
   padding-bottom: 150px;
-  padding-left: 150px;
 }
 .index-container .index-cameraman .cameraman img {
   width: 100%;
@@ -338,9 +429,10 @@ header nav ul li {
 }
 .conteinersobremi .texto {
   margin-top: 40%;
-  font-family: roboto;
+  font-family: "Bebas Neue";
   font-size: 115%;
   padding: 10%;
+  text-align: center;
 }
 .conteinersobremi .parrafo {
   margin-top: 10%;
@@ -426,16 +518,40 @@ header nav ul li {
 
 /* Media query */
 @media (max-width: 768px) {
-  .index-container .index-flex .index-video video {
-    height: 25%;
+  .index-container .index-flex {
+    background-size: cover;
+    background-position: 20%;
   }
-  .index-container .index-flex .section .pablogimenez h1 {
+  .index-container .index-flex .section .pablogimenez {
+    display: inline-block;
+  }
+  .index-container .index-flex .section .pablogimenez .fotografia h1 {
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-top: 3rem;
     font-size: 6rem;
-    margin-left: 0;
-    margin-top: 0;
+    margin-left: 0px;
+  }
+  .index-container .index-flex .section .pablogimenez .fotografia h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 0px;
+    padding-top: 2px;
+  }
+  .index-container .index-flex .section .pablogimenez .fotografia h4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 0px;
+    padding: 10px;
+  }
+  .index-container .index-flex .section .pablogimenez .camera h4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.7rem;
   }
   .index-container .index-flex .section .fotografia h2 {
     margin-left: 0;
@@ -470,6 +586,7 @@ header nav ul li {
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
+    padding: 0;
   }
   .index-container .index-cameraman .cameraman img {
     width: 100%;

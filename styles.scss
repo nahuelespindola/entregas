@@ -29,101 +29,157 @@
 /* Media query */
 
 @media (max-width: 768px) {
- .index-container{
-    .index-flex{
-        background-size: cover;
-        background-position: 20%;
-        .section{
-            .pablogimenez{
-                display: inline-block;
-                .fotografia{
-                    h1{
-                        display: flex;
-                        justify-content: center;
-                        text-align: center;
-                        padding-top: 3rem;
-                        font-size: 6rem;
-                        margin-left: 0px;
-                }
-                h2{
-                    display: flex;
-                        justify-content: center;
-                        text-align: center;
-                        margin-left: 0px;
-                        padding-top: 2px;
-                }
-                h4{
-                    display: flex;
-                        justify-content: center;
-                        text-align: center;
-                        margin-left: 0px;
-                        padding: 10px;
-                }
-                }    
-                .camera{
-                    h4{
-                        display: flex;
+    .index-container{
+       .index-flex{
+           background-size: cover;
+           background-position: 20%;
+           .section{
+               .pablogimenez{
+                   display: grid;
+                   grid-template-columns: 1fr;
+                   grid-template-rows: 1fr 1fr 1fr;
+
+                   .fotografia{
+                       .h1{
+                        display: block;
+                        position: none;
+                        h1{
+                            display: flex;
                             justify-content: center;
                             text-align: center;
-                            font-size: 0.7rem;
+                            padding-top: 3rem;
+                            font-size: 6rem;
+                            margin-left: 0px;
+                        }
+                        h2{
+                            text-align: center;
+                            padding-top: 0px;
+                            margin-top: 0px;
+                            margin-left: 0px;
+                            color: $blanco;
+                            font-family: 'Bebas Neue';
+                            position: relative;
+                            bottom: -40px;
+                            font-size: 2rem;
+                            animation: h2 3s 1;
+                            
+                        } 
+                        .h6 {
+                            position: none;
+                            text-align: center;
+                        bottom: -350px;
+                        margin-left: 0px;
+                        color: $blanco;
+                        font-family: roboto;
+                        padding: 50px;
+                        
+                            h6{
+                                font-size: 1.2rem;
+                                
+                            }
+                            
+                            
+                        }
+                            
+                   
+                    
                     }
-                }   
-            }
-            .fotografia{
-                h2{
+                   
+                   h4{
+                       display: flex;
+                           justify-content: center;
+                           text-align: center;
+                           margin-left: 0px;
+                           padding: 10px;
+                   }
+                   }    
+                   .camera{
+                    padding-top: 80px;
+                       h4{
+                           display: flex;
+                           padding-top: 0px;
+                               justify-content: center;
+                               text-align: center;
+                               font-size: 1.2rem;
+                               padding: 40px;
+                       }
+                       img{
+                        width: 100%;
+                       }
+                   }
+                   .contenedor{
                     margin-left: 0;
-                    text-align: center;
+            
+              
+                    .contenedor-botones{
+                     
+                        .boton{
+                            display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 290px;
+                        height: 80px;
+                    }
+                }
+            }   
+               }
+          
+               
+            }
+           
+       .index-cameraman{
+           display: grid;
+           grid-template-columns: 1fr;
+           grid-template-rows: 1fr 1fr;
+           .cameraman{
+               width: 100%;
+               img{
+                   
+                   height: 100%;
+               object-fit: cover;}
+           }
+           
+       }
+       }
+
+       .index-cards{
+        .index-cards-hover:hover{
+            .cards-line{
+                flex-wrap: wrap;
+                .card{
+                    
+                    border-radius: 0.1px;
+                    margin: 15px;
+                    
+                    width: 150px;
+                    height: 200px;
+                    border: none;
+                    margin-left: 0px;
+                }
+                
+            }
+        }
+        .index-cameraman{
+            display: inline-block;
+            padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding: 0;
+            
+            .cameraman{
+                img{
+                    width: 100%;
+                    padding: 10%;
+                    
                 }
             }
-            
-         }
-        .contenedor{
-            display: flex;
-            justify-content: center;
-            padding-right: 0;
-           
-            .contenedor-botones{
-                .boton{
-                    display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 250px;
-                height: 80px;
-            }
         }
-    }
-    .index-cameraman{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        .cameraman{
-            width: 100%;
-            img{
-                
-                height: 100%;
-            object-fit: cover;}
         }
-        
+       
     }
-    }
-    .index-cameraman{
-        display: inline-block;
-        padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding: 0;
-        
-        .cameraman{
-            img{
-                width: 100%;
-                padding: 10%;
-                
-            }
-        }
-    }
- }
+    
+   }
  
-}
 @media (max-width: 768px) {
     .container {
         grid-template-columns: repeat(1, 1fr);

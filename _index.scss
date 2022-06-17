@@ -115,11 +115,7 @@
 
 
 
-
-
-
-
-                .camera {
+.camera {
                     
                     h4 {
                         padding-top: 80px;
@@ -145,65 +141,67 @@
 
 
                 }
-            }
-
-            .contenedor {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                opacity: 0.6;
-                padding-top: 40px;
-                padding-bottom: 200px;
-                margin-left: 10px;
-            .contenedor-botones {
-                .boton {
+                .contenedor {
                     display: flex;
-                    align-items: center;
                     justify-content: center;
-                    width: 400px;
-                    height: 80px;
-                    text-decoration: none;
-                    background: $negro-secundario;
-                    color: $blanco;
-                    font-family: 'Bebas Neue', cursive;
-                    font-size: 20px;
-                    font-weight: 500;
-                    border: none;
-
-                    cursor: pointer;
-                    text-transform: uppercase;
-                    transition: .3s ease all;
-                    border-radius: 5px;
-                    position: relative;
-                    overflow: hidden;
-                    animation: boton 4s 1;
-
-                    @keyframes boton {
-                        0% {
-                            opacity: 0%;
-                            width: 50px;
-                        }
-
-                    }
-                }
-
-                .boton {
-                    &:hover {
+                    width: 100%;
+                    opacity: 0.6;
+                    padding-top: 40px;
+                    padding-bottom: 200px;
+                    margin-left: 10px;
+                    
+                .contenedor-botones {
+                    .boton {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 400px;
+                        height: 80px;
+                        text-decoration: none;
+                        background: $negro-secundario;
                         color: $blanco;
-
-                    }
-
-                    span {
-                        position: relative;
-                        z-index: 2;
+                        font-family: 'Bebas Neue', cursive;
+                        font-size: 20px;
+                        font-weight: 500;
+                        border: none;
+    
+                        cursor: pointer;
+                        text-transform: uppercase;
                         transition: .3s ease all;
+                        border-radius: 5px;
+                        position: relative;
+                        overflow: hidden;
+                        animation: boton 4s 1;
+    
+                        @keyframes boton {
+                            0% {
+                                opacity: 0%;
+                                width: 50px;
+                            }
+    
+                        }
+                    }
+    
+                    .boton {
+                        &:hover {
+                            color: $blanco;
+    
+                        }
+    
+                        span {
+                            position: relative;
+                            z-index: 2;
+                            transition: .3s ease all;
+                        }
                     }
                 }
+    
+    
+    
+            }
             }
 
-
-
-        }
+            
     }
 
 
@@ -273,13 +271,7 @@
                     transition: 3s;
                    padding: 40px;
                 }
-                .cards-line{
-               .card{
-                margin-left: 50px;
-                transition: 3s;
-               }
-               
-                }
+                
             }
 
             .top-text-card {
@@ -310,6 +302,8 @@
                 background: $negro;
                 flex-wrap: wrap;
                 transition: 3s;
+                
+                
 
                 .card {
 
@@ -318,6 +312,7 @@
                     width: 150px;
                     height: 200px;
                     border: none;
+                    margin-left: 50px;
                     transition: 3s;
 
                     box-shadow: 1px 3px 15px #2f2f2f;

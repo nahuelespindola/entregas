@@ -8,7 +8,9 @@
     position: relative;
     overflow: hidden;
 
+
     .index-flex {
+        position: relative;
         background-image: linear-gradient(rgba(10, 10, 10, 0.1), rgba(0, 0, 0.9, 0.9)), url(imagenes/background/background-cameraman.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -17,23 +19,14 @@
 
 
 
-        .overlay {
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            width: 100%;
-            height: 100%;
-            background: #1c1c1c;
-            opacity: 0.4;
-            z-index: -1;
-        }
-
-
 
         .section {
             .pablogimenez {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+
+
+
 
                 .fotografia {
 
@@ -115,94 +108,103 @@
 
 
 
-.camera {
-                    
-                    h4 {
-                        padding-top: 80px;
-                        text-align: center;
-                        color: $blanco;
-                        font-family: roboto;
-                        font-size: 0.9rem;
-                    }
 
-                    img {
-                        width: 90%;
-                        animation: rotate 3s 1;
+                .camera {}
 
-                        @keyframes rotate {
-                            0% {
-                                opacity: 0%;
-                                transform: rotate(5deg);
-                            }
+                h4 {
+                    padding-top: 80px;
+                    text-align: center;
+                    color: $blanco;
+                    font-family: roboto;
+                    font-size: 0.9rem;
+                }
 
+                img {
+                    width: 90%;
+                    animation: rotate 3s 1;
+
+
+
+
+
+
+
+
+                    @keyframes rotate {
+                        0% {
+                            opacity: 0%;
+                            transform: rotate(5deg);
                         }
+
                     }
+
 
 
 
                 }
+
                 .contenedor {
                     display: flex;
                     justify-content: center;
                     width: 100%;
                     opacity: 0.6;
-                    padding-top: 40px;
+
                     padding-bottom: 200px;
                     margin-left: 10px;
-                    
-                .contenedor-botones {
-                    .boton {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 400px;
-                        height: 80px;
-                        text-decoration: none;
-                        background: $negro-secundario;
-                        color: $blanco;
-                        font-family: 'Bebas Neue', cursive;
-                        font-size: 20px;
-                        font-weight: 500;
-                        border: none;
-    
-                        cursor: pointer;
-                        text-transform: uppercase;
-                        transition: .3s ease all;
-                        border-radius: 5px;
-                        position: relative;
-                        overflow: hidden;
-                        animation: boton 4s 1;
-    
-                        @keyframes boton {
-                            0% {
-                                opacity: 0%;
-                                width: 50px;
-                            }
-    
-                        }
-                    }
-    
-                    .boton {
-                        &:hover {
+
+                    .contenedor-botones {
+                        .boton {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 400px;
+                            height: 80px;
+                            text-decoration: none;
+                            background: $negro-secundario;
                             color: $blanco;
-    
-                        }
-    
-                        span {
-                            position: relative;
-                            z-index: 2;
+                            font-family: 'Bebas Neue', cursive;
+                            font-size: 20px;
+                            font-weight: 500;
+                            border: none;
+
+                            cursor: pointer;
+                            text-transform: uppercase;
                             transition: .3s ease all;
+                            border-radius: 5px;
+                            position: relative;
+                            overflow: hidden;
+                            animation: boton 4s 1;
+
+                            @keyframes boton {
+                                0% {
+                                    opacity: 0%;
+                                    width: 50px;
+                                }
+
+                            }
+                        }
+
+                        .boton {
+                            &:hover {
+                                color: $blanco;
+
+                            }
+
+                            span {
+                                position: relative;
+                                z-index: 2;
+                                transition: .3s ease all;
+                            }
                         }
                     }
+
+
+
                 }
-    
-    
-    
-            }
             }
 
-            
-    }
+
+        }
 
 
 
@@ -254,11 +256,9 @@
     }
 
     .index-cards {
-        display: flex;
-        justify-content: center;
+       overflow: hidden;
         background: $negro;
-        flex-wrap: wrap;
-        min-height: 100vh;
+        
 
         .index-cards-hover {
             opacity: 0%;
@@ -267,11 +267,12 @@
             &:hover {
                 opacity: 100%;
                 margin-top: 50px;
-                h5{
+
+                h5 {
                     transition: 3s;
-                   padding: 40px;
+                    padding: 40px;
                 }
-                
+
             }
 
             .top-text-card {
@@ -302,8 +303,8 @@
                 background: $negro;
                 flex-wrap: wrap;
                 transition: 3s;
-                
-                
+
+
 
                 .card {
 
@@ -334,7 +335,8 @@
                         align-items: center;
                         justify-content: center;
                         color: white;
-                        position: absolute;text-align: center;
+                        position: absolute;
+                        text-align: center;
                         width: 100%;
 
                         margin: 0;
@@ -363,46 +365,79 @@
 
 
     .index-cameraman {
-        background-color: $negro;
-        display: flex;
-        padding: 60px;
-        padding-top: 150px;
-        padding-bottom: 150px;
-
-        .cameraman {
-            img {
-                width: 100%;
-            }
-        }
+        background-image: url(imagenes/index/index-cameraman3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 200px;
+        
+        
 
         .cameraman-text {
-            opacity: 50%;
             transition: 1s;
+           opacity: 50%;
+           &:hover{
+            opacity: 100%;
+           }
 
-            &:hover {
-                opacity: 100%;
-                cursor: pointer;
+            .text-overlay {
+                display: flex;
+                justify-content: left;
+                padding-top: 200px;
+                padding-left: 500px;
+                .card-overlay {
+                    border-radius: 2px;
+                  background: rgba(0, 0, 0, 0.5);
+                  width: 580px;
+                height: 200px;
+            
+                   
+div{
+    h1 {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       text-align: center;
+        color: $blanco;
+        
+        font-family: 'Bebas Neue';
+    }
+
+    h4 {
+        display: flex;
+   align-items: center;
+   justify-content: center;
+    
+        text-align: center;
+        color: $blanco;
+        font-family: roboto;
+        font-size: 1rem;
+        
+    }
+}
+                    
+
+
+
+                }
 
 
             }
 
-            padding: 40px;
 
-            h1 {
-                color: $blanco;
-                text-align: center;
-                font-family: 'Bebas Neue';
-            }
-
-            h4 {
-                color: #555555;
-                text-align: center;
-                font-family: roboto;
-                font-size: 1.2rem;
-            }
         }
     }
 
+    .index-last{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        h4{
+            font-size: 1rem;
+            color: $blanco;
+        }
+    }
 }
 
 

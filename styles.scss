@@ -18,6 +18,7 @@
     font-family: roboto;
     src: url(Roboto-Regular.ttf);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -29,173 +30,175 @@
 /* Media query */
 
 @media (max-width: 768px) {
-    .index-container{
-       .index-flex{
-           background-size: cover;
-           background-position: 20%;
-           .section{
-               .pablogimenez{
-                   display: grid;
-                   grid-template-columns: 1fr;
-                   grid-template-rows: 1fr 1fr 1fr;
+    .index-container {
+        .index-flex {
+            background-size: cover;
+            background-position: 20%;
 
-                   .fotografia{
-                       .h1{
-                        display: block;
-                        position: none;
-                        h1{
+            .section {
+                .pablogimenez {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+
+                    .fotografia {
+                        .h1 {
+                            display: block;
+                            position: none;
+
+                            h1 {
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                padding-top: 3rem;
+                                font-size: 6rem;
+                                margin-left: 0px;
+                            }
+
+                            h2 {
+                                text-align: center;
+                                padding-top: 0px;
+                                margin-top: 0px;
+                                margin-left: 0px;
+                                color: $blanco;
+                                font-family: 'Bebas Neue';
+                                position: relative;
+                                bottom: -40px;
+                                font-size: 2rem;
+                                animation: h2 3s 1;
+
+                            }
+
+                            .h6 {
+                                position: none;
+                                text-align: center;
+                                bottom: -350px;
+                                margin-left: 0px;
+                                color: $blanco;
+                                font-family: roboto;
+                                padding: 50px;
+
+                                h6 {
+                                    font-size: 1.2rem;
+
+                                }
+
+
+                            }
+
+
+
+                        }
+
+                        h4 {
                             display: flex;
                             justify-content: center;
                             text-align: center;
-                            padding-top: 3rem;
-                            font-size: 6rem;
                             margin-left: 0px;
+                            padding: 10px;
                         }
-                        h2{
-                            text-align: center;
-                            padding-top: 0px;
-                            margin-top: 0px;
-                            margin-left: 0px;
-                            color: $blanco;
-                            font-family: 'Bebas Neue';
-                            position: relative;
-                            bottom: -40px;
-                            font-size: 2rem;
-                            animation: h2 3s 1;
-                            
-                        } 
-                        .h6 {
-                            position: none;
-                            text-align: center;
-                        bottom: -350px;
-                        margin-left: 0px;
-                        color: $blanco;
-                        font-family: roboto;
-                        padding: 50px;
-                        
-                            h6{
-                                font-size: 1.2rem;
-                                
-                            }
-                            
-                            
-                        }
-                            
-                   
-                    
                     }
-                   
-                   h4{
-                       display: flex;
-                           justify-content: center;
-                           text-align: center;
-                           margin-left: 0px;
-                           padding: 10px;
-                   }
-                   }    
-                   .camera{
-                    padding-top: 80px;
-                       h4{
-                           display: flex;
-                           padding-top: 0px;
-                               justify-content: center;
-                               text-align: center;
-                               font-size: 1.2rem;
-                               padding: 40px;
-                       }
-                       img{
-                        width: 100%;
-                       }
-                   }
-                   .contenedor{
-                    margin-left: 0;
-            
-              
-                    .contenedor-botones{
-                     
-                        .boton{
-                            display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 290px;
-                        height: 80px;
-                    }
-                }
-            }   
-               }
-          
-               
-            }
-           
-       .index-cameraman{
-           display: grid;
-           grid-template-columns: 1fr;
-           grid-template-rows: 1fr 1fr;
-           .cameraman{
-               width: 100%;
-               img{
-                   
-                   height: 100%;
-               object-fit: cover;}
-           }
-           
-       }
-       }
 
-       .index-cards{
-        .index-cards-hover:hover{
-            .cards-line{
-                flex-wrap: wrap;
-                .card{
-                    
-                    border-radius: 0.1px;
-                    margin: 15px;
-                    
-                    width: 150px;
-                    height: 200px;
-                    border: none;
-                    margin-left: 0px;
+                    .camera {
+                        padding-top: 80px;
+
+                        h4 {
+                            display: flex;
+                            padding-top: 0px;
+                            justify-content: center;
+                            text-align: center;
+                            font-size: 1.2rem;
+                            padding: 40px;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .contenedor {
+                        margin-left: 0;
+
+
+                        .contenedor-botones {
+
+                            .boton {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 290px;
+                                height: 80px;
+                            }
+                        }
+                    }
                 }
-                
+
+
+            }
+
+
+        }
+
+        .index-cards {
+            .index-cards-hover {
+                opacity: 100%;
+
+                .index-cards-hover:hover {
+                    opacity: 100%;
+                }
+
+                .cards-line {
+                    .card {
+                        margin-left: 10px;
+                        margin-right: 10px;
+
+                    }
+                }
+            }
+
+
+            .index-cameraman {
+
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding: 0;
+
+                .cameraman-text {
+                    opacity: 100%;
+
+                    &:hover {
+                        opacity: 100%;
+                    }
+
+                    .text-overlay {
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 200px;
+                        padding-left: 0px;
+                    }
+                }
+
+
             }
         }
-        .index-cameraman{
-            
-            padding-top: 0;
-        padding-bottom: 0;
-        padding-left: 0;
-        padding: 0;
-            .cameraman-text{
-                opacity: 100%;
-                &:hover{
-                 opacity: 100%;
-                }
-                .text-overlay{
-                    display: flex;
-                justify-content: center;
-                padding-top: 200px;
-                padding-left: 0px;
-                }
-                }
-              
-            
-        }
-        }
-       
+
     }
-    
-   }
- 
+
+}
+
 @media (max-width: 768px) {
     .container {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 @media (max-width: 768px) {
     .gridexperiencias {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 @media (max-width: 768px) {
     .conteinersobremi {
         grid-template-columns: repeat(1, 1fr);
@@ -209,12 +212,15 @@
         }
     }
 }
+
 @media (max-width: 768px) {
     .formgrid-container {
         grid-template-columns: repeat(1, 1fr);
+
         .title-contacto {
             text-align: center;
         }
     }
 }
+
 /* Media query */

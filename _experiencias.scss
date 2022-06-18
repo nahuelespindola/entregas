@@ -9,12 +9,14 @@
     width: 100%;
     object-fit: cover;
     height: 100%;
+
     .item {
         width: 100%;
         object-fit: cover;
         height: 100%;
         position: relative;
     }
+
     div {
         img {
             width: 100%;
@@ -22,17 +24,20 @@
             height: 100%;
         }
     }
+
     .h2experiencias {
         text-align: center;
         padding-top: 5%;
         text-align: center;
         font-family: 'Bebas Neue';
     }
+
     .h3experiencias {
         font-size: 90%;
         font-family: 'Bebas Neue';
         padding: 5%;
     }
+
     .item {
         &:hover {
             .overlay {
@@ -41,6 +46,7 @@
             }
         }
     }
+
     .overlay {
         color: $blanco;
         bottom: 0;
@@ -51,10 +57,11 @@
         height: 0;
         transition: 1s ease;
         overflow: hidden;
-    
+
         h2 {
             text-align: center;
         }
     }
 }
+
 /* Fin experiencias.html */

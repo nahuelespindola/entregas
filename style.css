@@ -601,28 +601,15 @@ header nav ul li {
     width: 290px;
     height: 80px;
   }
-  .index-container .index-flex .index-cameraman {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+  .index-container .index-cards .index-cards-hover {
+    opacity: 100%;
   }
-  .index-container .index-flex .index-cameraman .cameraman {
-    width: 100%;
+  .index-container .index-cards .index-cards-hover .index-cards-hover:hover {
+    opacity: 100%;
   }
-  .index-container .index-flex .index-cameraman .cameraman img {
-    height: 100%;
-    object-fit: cover;
-  }
-  .index-container .index-cards .index-cards-hover:hover .cards-line {
-    flex-wrap: wrap;
-  }
-  .index-container .index-cards .index-cards-hover:hover .cards-line .card {
-    border-radius: 0.1px;
-    margin: 15px;
-    width: 150px;
-    height: 200px;
-    border: none;
-    margin-left: 0px;
+  .index-container .index-cards .index-cards-hover .cards-line .card {
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .index-container .index-cards .index-cameraman {
     padding-top: 0;

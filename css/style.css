@@ -247,7 +247,7 @@ header nav ul li {
   opacity: 1;
 }
 .index-container .index-cameraman {
-  background-image: url(imagenes/index/index-cameraman3.png);
+  background-image: url(../imagenes/index/index-cameraman.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px;

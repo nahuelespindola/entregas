@@ -1,4 +1,5 @@
 @import "variables-colores";
+
 /* Footer */
 .footer {
     text-align: center;
@@ -14,16 +15,18 @@
         text-decoration: none;
         color: $blanco;
     }
+
     .mailto {
         &:hover {
             color: $gris;
         }
     }
+
     .behanceto {
         &:hover {
             color: $gris;
         }
-    } 
+    }
 }
 
 /* Fin Footer */

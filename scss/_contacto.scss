@@ -8,24 +8,28 @@
     overflow: hidden;
     background-color: #222222;
     min-height: 100vh;
-    .contacto{
+
+    .contacto {
         display: flex;
         flex-direction: column;
         margin-left: 120px;
 
         .title-contacto {
-        
+
             text-align: center;
-            font-family:'Bebas Neue' ;
+            font-family: 'Bebas Neue';
             color: $blanco;
-            font-size: 4rem;}
-            h4{
-                font-size: 20px;
-                text-align: center;
-                font-family: 'roboto';
-                color: $blanco;
-            }
+            font-size: 4rem;
+        }
+
+        h4 {
+            font-size: 20px;
+            text-align: center;
+            font-family: 'roboto';
+            color: $blanco;
+        }
     }
+
     .form-container {
         padding: 10%;
         width: 100%;

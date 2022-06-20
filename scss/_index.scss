@@ -107,7 +107,7 @@
                             opacity: 0.6;
 
                             padding-top: 80px;
-                            
+
 
                             .contenedor-botones {
                                 .boton {
@@ -128,6 +128,7 @@
                                     border-radius: 5px;
                                     position: relative;
                                     overflow: hidden;
+
                                     &::after {
                                         content: "";
                                         width: 100%;
@@ -140,15 +141,17 @@
                                         transition: .4s ease-in-out all;
                                         border-radius: 0px 0px 300px 300px;
                                     }
+
                                     &:hover {
                                         &::after {
                                             top: 0;
                                         }
                                     }
-                                    span{
+
+                                    span {
                                         position: relative;
-	z-index: 2;
-	transition: .3s ease all;
+                                        z-index: 2;
+                                        transition: .3s ease all;
                                     }
                                 }
 
@@ -216,7 +219,7 @@
             }
         }
 
-        
+
 
 
     }
@@ -331,7 +334,7 @@
 
 
     .index-cameraman {
-        background-image: url(imagenes/index/index-cameraman3.png);
+        background-image: url(../imagenes/index/index-cameraman.png);
         background-repeat: no-repeat;
         background-size: cover;
         padding: 200px;

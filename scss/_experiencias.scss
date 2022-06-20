@@ -2,94 +2,100 @@
 
 /* experiencias.html */
 /* H2 Custom - Overlay */
-.experiencias-container{
-    
+.experiencias-container {
+
     overflow: hidden;
     background-color: #222222;
     min-height: 100vh;
+
     .gridexperiencias {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-       .item {
+
+        .item {
             height: 100vh;
             transition: 1s;
-    
+
             &:hover:nth-child(1) {
                 background-color: #b5a0d0;
             }
-    
+
             &:hover:nth-child(2) {
                 background-color: #da5152;
             }
-    
+
             &:hover:nth-child(3) {
                 background-color: #83b4bc;
             }
-    
+
             &:hover:nth-child(4) {
                 background-color: #b98ebc;
             }
-    
+
             div {
                 display: inline-block;
-                margin:20px;
-                
+                margin: 20px;
+
                 &:hover {
-                    h1{
+                    h1 {
                         opacity: 100%;
                     }
-    h4{
-        opacity: 100%;
-    }
+
+                    h4 {
+                        opacity: 100%;
+                    }
                 }
+
                 img {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     width: 85%;
                     transition: 1s;
-    margin-left: 20px;
+                    margin-left: 20px;
+
                     &:hover {
                         width: 100%;
                         margin-left: 0px;
                     }
-    
+
                 }
-                div{
-                    
-                   
+
+                div {
+
+
                     h1 {
                         text-align: center;
-                            transition: 1s;
-                            font-family: Bebas Neue;
-                            color: white;
-                            opacity: 0%;
-                        }
-            
-                        h4 {
-                            
-                            text-align: justify;
-                            transition: 1s;
-                            font-family: roboto;
-                            color: white;
-                            font-size: 1rem;
-                            opacity: 0%;
-                          
-                           
-                            
-                        }
+                        transition: 1s;
+                        font-family: Bebas Neue;
+                        color: white;
+                        opacity: 0%;
+                    }
+
+                    h4 {
+
+                        text-align: justify;
+                        transition: 1s;
+                        font-family: roboto;
+                        color: white;
+                        font-size: 1rem;
+                        opacity: 0%;
+
+
+
+                    }
                 }
-          
-               
-    
-                
-    
-                   
-                
-    
+
+
+
+
+
+
+
+
             }
-    
-    
+
+
         }
     }
 }

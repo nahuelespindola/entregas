@@ -2,25 +2,35 @@
 
 /* contacto.html */
 .formgrid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #222222;
+    min-height: 100vh;
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        margin-left: 120px;
 
-    .title-contacto {
-        text-align: center;
+        .title-contacto {
+        
+            text-align: center;
+            font-family:'Bebas Neue' ;
+            color: $blanco;
+            font-size: 4rem;}
+            h4{
+                font-size: 20px;
+                text-align: center;
+                font-family: 'roboto';
+                color: $blanco;
+            }
     }
-
-    .contacto-h4 {
-        margin-top: 5%;
-    }
-
-    .contacto h4 {
-        font-size: 20px;
-        text-align: center;
-    }
-
     .form-container {
         padding: 10%;
         width: 100%;
+        color: $blanco;
+        font-family: 'roboto';
     }
 }
 

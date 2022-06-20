@@ -1,10 +1,17 @@
 @import "variables-colores";
 /* trabajo.html */
 /* H1 */
+.trabajo-background{
+    background-color: #222222;
+}
+
 .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .h1pablogimenez {
-        color: $negro;
-        font-size: 150%;
+        color: $blanco;
+        font-size: 2rem;
         font-family: 'Bebas Neue';
         text-align: center;
     }
@@ -14,14 +21,14 @@
 .container {
     columns: 5 320px;
     gap: 0.5em;
-    margin: 1%;
-    margin-top: 2%;
+    margin-bottom: 2%;
     object-fit: cover;
     .item {
         width: 100%;
         object-fit: cover;
         height: 100%;
         position: relative;
+        
     }
     .title-container {
         margin-top: 2%;
@@ -30,6 +37,7 @@
         width: 100%;
         padding-top: 0.5em;
         object-fit: cover;
+        border-radius: 30px;
     }
     .overlay {
         color: $blanco;
@@ -41,6 +49,7 @@
         height: 0;
         transition: 1s ease;
         overflow: hidden;
+        border-radius: 0 0 30px 30px;
         h2 {
             font-family: 'Bebas Neue';
             text-align: center;

@@ -32,71 +32,54 @@
 @media (max-width: 768px) {
     .index-container {
         .index-flex {
-            background-size: cover;
-            background-position: 20%;
-
             .section {
                 .pablogimenez {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr 1fr 1fr;
-
                     .fotografia {
-                        .h1 {
-                            display: block;
-                            position: none;
+                        display: block;
 
-                            h1 {
-                                display: flex;
-                                justify-content: center;
-                                text-align: center;
-                                padding-top: 3rem;
-                                font-size: 6rem;
-                                margin-left: 0px;
-                            }
-
-                            h2 {
-                                text-align: center;
-                                padding-top: 0px;
-                                margin-top: 0px;
-                                margin-left: 0px;
-                                color: $blanco;
-                                font-family: 'Bebas Neue';
-                                position: relative;
-                                bottom: -40px;
-                                font-size: 2rem;
-                                animation: h2 3s 1;
-
-                            }
-
-                            .h6 {
-                                position: none;
-                                text-align: center;
-                                bottom: -350px;
-                                margin-left: 0px;
-                                color: $blanco;
-                                font-family: roboto;
-                                padding: 50px;
-
-                                h6 {
-                                    font-size: 1.2rem;
-
+                        .index-textos {
+                            div {
+                                h1 {
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-left: 0;
+                                    font-size: 4rem;
                                 }
-
-
                             }
 
+                            div :nth-child(3) {
+                                justify-content: center;
+                                align-items: center;
+                                margin-left: 0;
+                                font-size: 1.5rem;
+                            }
 
+                            h4 {
+                                justify-content: center;
+                                align-items: center;
+                                margin-left: 0;
+                                padding: 50px;
+                                font-size: 0.7rem;
+                            }
 
+                            .contenedor {
+                                padding-top: 0px;
+
+                                .contenedor-botones {
+                                    width: 60%;
+
+                                    .boton {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+
+                                    }
+                                }
+                            }
                         }
 
-                        h4 {
-                            display: flex;
-                            justify-content: center;
-                            text-align: center;
-                            margin-left: 0px;
-                            padding: 10px;
-                        }
+
+
                     }
 
                     .camera {
@@ -117,18 +100,18 @@
                     }
 
                     .contenedor {
-                        margin-left: 0;
-
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 0px;
 
                         .contenedor-botones {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 60%;
 
-                            .boton {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                width: 290px;
-                                height: 80px;
-                            }
+
+                            .boton {}
                         }
                     }
                 }
@@ -193,34 +176,143 @@
     }
 }
 
-@media (max-width: 768px) {
-    .gridexperiencias {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
+
 
 @media (max-width: 768px) {
     .conteinersobremi {
-        grid-template-columns: repeat(1, 1fr);
-
+        display: block;
+        
+    
         .portrait {
-            margin-top: 10px;
+            background-color: $blanco;
+            min-height: 0vh;
+            
+    
+            img {
+                width: 100%;
+                margin-left: 0px;
+            }
         }
-
+    
         .texto {
-            margin-top: 10px;
+            background-color: #222222;
+            display: block;
+            min-height: 100vh;
+    div{display: flex;
+        justify-content: center; 
+        align-items: center;      
+        .h1-1{
+            
+            position: none;
+            
+            background: linear-gradient(90deg, rgb(255, 255, 255) 35%, white 0%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+    margin-top: -300px;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+font-size: 4rem;
+        }
+        .h1-2{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: -90px;
+            margin-left: 0px;
+            color: $blanco;
+            position: absolute;
+                
+                
+                font-family: Bebas Neue;
+                font-size: 4rem;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: none;
+            background: rgba(0, 0, 0, 0.253);
+            width: 240px;
+            height: 260px;
+            margin-top: 300px;
+            margin-left: 0px;
+    
+            p {
+                display: flex;
+                justify-content: center;
+                padding: 5px;
+                text-align: justify;
+                align-items: center;
+                position: none;
+                z-index: 1;
+                font-size: 0.9rem;
+                color: $blanco;
+                font-family: 'roboto';
+            }
+        }
+    }
+   
+
+        }
+    
+    
+    
+    
+    
+    
+    
+    }
+}
+
+@media (max-width: 768px) {
+    .experiencias-container {
+        .gridexperiencias {
+            display: block;
+
+            .formgrid-container {
+
+                .contacto {
+                    padding-top: 15px;
+                    margin-left: 0px;
+
+                    .title-contacto {
+                        font-size: 4rem;
+                    }
+
+                    h4 {
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
     }
 }
 
 @media (max-width: 768px) {
-    .formgrid-container {
-        grid-template-columns: repeat(1, 1fr);
-
-        .title-contacto {
-            text-align: center;
+    .formgrid-container{
+        display: inline-block;
+        .contacto{
+        padding-top: 70px;
+            margin-left: 0;
+            .title-contacto{
+                text-align: center;
+                font-size: 4rem;
+            }
+            h4{
+                font-size: 1.2rem;
+            }
+        }
+        .form-container{
+            
+            padding: 30px;
+            width: 100%;
+            
+            
         }
     }
 }
-
 /* Media query */

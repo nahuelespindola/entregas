@@ -113,6 +113,9 @@ header nav ul li {
   opacity: 0.6;
   padding-top: 80px;
 }
+.index-container .index-flex .section .pablogimenez .fotografia .index-textos .contenedor a {
+  text-decoration: none;
+}
 .index-container .index-flex .section .pablogimenez .fotografia .index-textos .contenedor .contenedor-botones .boton {
   display: inline-flex;
   align-items: center;
